@@ -1,0 +1,201 @@
+announced_date,traded_date,action,notifier,price,currency,amount,holding,ticker,role,created_at,updated_at
+2025-06-25,2025-06-23,Buy,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,5327.0,GBP,,3,CWK,,2025-06-25 23:07:11.932,2025-06-25 23:07:11.932
+2025-06-11,2025-06-10,Buy,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,5300.0,GBP,,375,CWK,,2025-06-25 23:07:11.935,2025-06-25 23:07:11.935
+2025-06-11,2025-06-10,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,5300.0,GBP,,378,CWK,,2025-06-25 23:07:11.937,2025-06-25 23:07:11.937
+2025-05-22,2025-05-21,Buy,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,5472.8,GBP,,3,CWK,,2025-06-25 23:07:11.94,2025-06-25 23:07:11.94
+2025-04-25,2025-04-22,Transfer From,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,,GBP,,1,CWK,,2025-06-25 23:07:11.941,2025-06-25 23:07:11.941
+2025-04-25,2025-04-22,Buy,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,50.6,GBP,,2,CWK,,2025-06-25 23:07:11.942,2025-06-25 23:07:11.942
+2025-04-23,2025-03-06,Buy,Rachel Howarth held the position of Independent Non-Executive Director at the time of this trade.Rachel Howarth,4922.0,GBP,,170,CWK,,2025-06-25 23:07:11.944,2025-06-25 23:07:11.944
+2025-03-26,2025-03-24,Exercise of Option,Adam Couch held the position of CEO at the time of this trade.Adam Couch,2534.0,GBP,,591,CWK,,2025-06-25 23:07:11.946,2025-06-25 23:07:11.946
+2025-03-25,2025-03-21,Buy,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,5050.0,GBP,,3,CWK,,2025-06-25 23:07:11.947,2025-06-25 23:07:11.947
+2025-03-24,2025-03-21,Sell,Jim Brisby held the position of Commercial Director at the time of this trade.Jim Brisby,5010.6,GBP,,7000,CWK,,2025-06-25 23:07:11.948,2025-06-25 23:07:11.948
+2025-02-24,2025-02-21,Buy,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,4929.6,GBP,,3,CWK,,2025-06-25 23:07:11.95,2025-06-25 23:07:11.95
+2024-12-27,2024-12-23,Buy,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,4915.0,GBP,,3,CWK,,2025-06-25 23:07:11.951,2025-06-25 23:07:11.951
+2024-10-01,2024-09-27,Sell,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,4910.0,GBP,,16500,CWK,,2025-06-25 23:07:11.952,2025-06-25 23:07:11.952
+2024-09-25,2024-09-24,Buy,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4657.5,GBP,,427,CWK,,2025-06-25 23:07:11.954,2025-06-25 23:07:11.954
+2024-09-25,2024-09-24,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4657.5,GBP,,430,CWK,,2025-06-25 23:07:11.955,2025-06-25 23:07:11.955
+2024-09-24,2024-09-24,Buy,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4657.5,GBP,,427,CWK,,2025-06-25 23:07:11.956,2025-06-25 23:07:11.956
+2024-09-24,2024-09-24,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4657.5,GBP,,430,CWK,,2025-06-25 23:07:11.957,2025-06-25 23:07:11.957
+2024-09-16,2024-09-12,Buy Dividends,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4627.79,GBP,,55,CWK,,2025-06-25 23:07:11.96,2025-06-25 23:07:11.96
+2024-08-12,2024-08-09,Sell,Adam Couch held the position of CEO at the time of this trade.Adam Couch,4560.0,GBP,,1,CWK,,2025-06-25 23:07:11.963,2025-06-25 23:07:11.963
+2024-08-06,2024-08-06,Exercise of Option,Adam Couch held the position of CEO at the time of this trade.Adam Couch,,GBP,,26249,CWK,,2025-06-25 23:07:11.964,2025-06-25 23:07:11.964
+2024-08-06,2024-08-06,Sell,Adam Couch held the position of CEO at the time of this trade.Adam Couch,4519.0,GBP,,12399,CWK,,2025-06-25 23:07:11.965,2025-06-25 23:07:11.965
+2024-08-06,2024-08-06,Exercise of Option,Jim Brisby held the position of Commercial Director at the time of this trade.Jim Brisby,,GBP,,17353,CWK,,2025-06-25 23:07:11.967,2025-06-25 23:07:11.967
+2024-08-06,2024-08-06,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4519.0,GBP,,8197,CWK,,2025-06-25 23:07:11.968,2025-06-25 23:07:11.968
+2024-08-06,2024-08-06,Sell,Jim Brisby held the position of Commercial Director at the time of this trade.Jim Brisby,4519.0,GBP,,8197,CWK,,2025-06-25 23:07:11.969,2025-06-25 23:07:11.969
+2024-08-06,2024-08-06,Sell,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,4519.0,GBP,,8197,CWK,,2025-06-25 23:07:11.97,2025-06-25 23:07:11.97
+2024-08-06,2024-08-06,Exercise of Option,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,,GBP,,17353,CWK,,2025-06-25 23:07:11.972,2025-06-25 23:07:11.972
+2024-08-06,2024-08-06,Exercise of Option,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,,GBP,,17353,CWK,,2025-06-25 23:07:11.973,2025-06-25 23:07:11.973
+2024-08-05,2024-08-01,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4730.0,GBP,,25000,CWK,,2025-06-25 23:07:11.974,2025-06-25 23:07:11.974
+2024-08-05,2024-08-01,Sell,Adam Couch held the position of CEO at the time of this trade.Adam Couch,4757.34,GBP,,25000,CWK,,2025-06-25 23:07:11.975,2025-06-25 23:07:11.975
+2024-03-27,2024-03-25,Sell,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,4090.0,GBP,,1330,CWK,,2025-06-25 23:07:11.977,2025-06-25 23:07:11.977
+2024-03-21,2024-03-21,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4183.58,GBP,,400,CWK,,2025-06-25 23:07:11.978,2025-06-25 23:07:11.978
+2024-03-15,2024-03-14,Exercise of Option,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,2800.0,GBP,,321,CWK,,2025-06-25 23:07:11.98,2025-06-25 23:07:11.98
+2024-02-14,2024-02-13,Buy Dividends,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,4010.11,GBP,,21,CWK,,2025-06-25 23:07:11.981,2025-06-25 23:07:11.981
+2023-12-05,2023-12-05,Sell,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,3879.0,GBP,,2666,CWK,,2025-06-25 23:07:11.983,2025-06-25 23:07:11.983
+2023-12-01,2023-11-29,Exercise of Option,Christopher Aldersley held the position of COO at the time of this trade.Christopher Aldersley,,GBP,,2666,CWK,,2025-06-25 23:07:11.985,2025-06-25 23:07:11.985
+2023-09-12,2023-09-11,Buy,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,3451.0,GBP,,576,CWK,,2025-06-25 23:07:11.986,2025-06-25 23:07:11.986
+2023-09-12,2023-09-11,Sell,Mark Bottomley held the position of CFO at the time of this trade.Mark Bottomley,3451.0,GBP,,580,CWK,,2025-06-25 23:07:11.987,2025-06-25 23:07:11.987
+2025-06-25,2025-06-24,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,289498,BT.A,,2025-06-25 23:08:00.656,2025-06-25 23:08:00.656
+2025-06-25,2025-06-24,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,190.0,GBP,,134546,BT.A,,2025-06-25 23:08:00.661,2025-06-25 23:08:00.661
+2025-02-04,2025-02-04,Buy,Alex Chisholm held the position of Non-Executive Director at the time of this trade.Alex Chisholm,141.0,GBP,,30000,BT.A,,2025-06-25 23:08:00.663,2025-06-25 23:08:00.663
+2024-11-08,2024-11-08,Buy,Tushar Morzaria held the position of Non-Executive Director at the time of this trade.Tushar Morzaria,136.0,GBP,,35000,BT.A,,2025-06-25 23:08:00.664,2025-06-25 23:08:00.664
+2024-08-06,2024-08-05,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,134.0,GBP,,198537,BT.A,,2025-06-25 23:08:00.666,2025-06-25 23:08:00.666
+2024-08-06,2024-08-05,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,421573,BT.A,,2025-06-25 23:08:00.667,2025-06-25 23:08:00.667
+2024-06-25,2024-06-24,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,143.0,GBP,,625017,BT.A,,2025-06-25 23:08:00.669,2025-06-25 23:08:00.669
+2024-06-25,2024-06-24,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,770625,BT.A,,2025-06-25 23:08:00.67,2025-06-25 23:08:00.67
+2024-05-20,2024-05-20,Buy,Tushar Morzaria held the position of Non-Executive Director at the time of this trade.Tushar Morzaria,133.0,GBP,,53270,BT.A,,2025-06-25 23:08:00.671,2025-06-25 23:08:00.671
+2024-02-29,2024-02-29,Buy,Matthew Key held the position of Independent Non-Executive Director at the time of this trade.Matthew Key,104.0,GBP,,28000,BT.A,,2025-06-25 23:08:00.672,2025-06-25 23:08:00.672
+2024-02-20,2024-02-15,Buy,Steven (Steve) Guggenheimer held the position of Independent Non-Executive Director at the time of this trade.Steven (Steve) Guggenheimer,1.34,GBP,,4700,BT.A,,2025-06-25 23:08:00.674,2025-06-25 23:08:00.674
+2023-12-14,2023-12-13,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,125.0,GBP,,160000,BT.A,,2025-06-25 23:08:00.675,2025-06-25 23:08:00.675
+2023-11-24,2023-11-24,Buy,Sara Weller held the position of Independent Non-Executive Director at the time of this trade.Sara Weller,121.0,GBP,,5000,BT.A,,2025-06-25 23:08:00.676,2025-06-25 23:08:00.676
+2023-10-17,2023-10-14,Buy Dividends,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,117.0,GBP,,14257,BT.A,,2025-06-25 23:08:00.677,2025-06-25 23:08:00.677
+2023-09-15,2023-09-14,Buy Dividends,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,117.0,GBP,,312489,BT.A,,2025-06-25 23:08:00.679,2025-06-25 23:08:00.679
+2023-08-25,2023-08-23,Buy,Maggie Chan Jones held the position of Independent Non-Executive Director at the time of this trade.Maggie Chan Jones,1.42,GBP,,70000,BT.A,,2025-06-25 23:08:00.68,2025-06-25 23:08:00.68
+2023-08-07,2023-08-07,Buy,Matthew Key held the position of Independent Non-Executive Director at the time of this trade.Matthew Key,113.0,GBP,,19900,BT.A,,2025-06-25 23:08:00.681,2025-06-25 23:08:00.681
+2023-08-07,2023-08-03,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,185975,BT.A,,2025-06-25 23:08:00.682,2025-06-25 23:08:00.682
+2023-08-07,2023-08-03,Transfer From,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,,GBP,,278163,BT.A,,2025-06-25 23:08:00.685,2025-06-25 23:08:00.685
+2023-06-01,2023-06-01,Buy,Sara Weller held the position of Independent Non-Executive Director at the time of this trade.Sara Weller,146.0,GBP,,5000,BT.A,,2025-06-25 23:08:00.687,2025-06-25 23:08:00.687
+2023-05-30,2023-05-16,Buy,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,152.0,GBP,,1182,BT.A,,2025-06-25 23:08:00.688,2025-06-25 23:08:00.688
+2022-08-03,2022-08-02,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,160.0,GBP,,126830,BT.A,,2025-06-25 23:08:00.689,2025-06-25 23:08:00.689
+2022-08-03,2022-08-02,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,84403,BT.A,,2025-06-25 23:08:00.691,2025-06-25 23:08:00.691
+2022-08-03,2022-08-02,Transfer From,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,,GBP,,31781,BT.A,,2025-06-25 23:08:00.692,2025-06-25 23:08:00.692
+2022-08-03,2022-08-02,Sell,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,160.0,GBP,,216800,BT.A,,2025-06-25 23:08:00.693,2025-06-25 23:08:00.693
+2022-05-18,2022-05-16,Buy,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,182.0,GBP,,985,BT.A,,2025-06-25 23:08:00.694,2025-06-25 23:08:00.694
+2021-08-09,2021-08-05,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,172.0,GBP,,78874,BT.A,,2025-06-25 23:08:00.695,2025-06-25 23:08:00.695
+2021-08-09,2021-08-05,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,167480,BT.A,,2025-06-25 23:08:00.697,2025-06-25 23:08:00.697
+2021-05-19,2021-05-17,Buy,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,165.0,GBP,,1085,BT.A,,2025-06-25 23:08:00.698,2025-06-25 23:08:00.698
+2021-05-19,2021-05-17,Buy,Jan du Plessis held the position of Chairman at the time of this trade.Jan du Plessis,165.0,GBP,,1084,BT.A,,2025-06-25 23:08:00.699,2025-06-25 23:08:00.699
+2021-05-17,2021-05-17,Buy,Sara Weller held the position of Independent Non-Executive Director at the time of this trade.Sara Weller,164.0,GBP,,30000,BT.A,,2025-06-25 23:08:00.701,2025-06-25 23:08:00.701
+2021-05-17,2021-05-14,Buy,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,163.0,GBP,,1250000,BT.A,,2025-06-25 23:08:00.702,2025-06-25 23:08:00.702
+2021-03-31,2021-03-31,Notification of Holding,Isabel Hudson held the position of Independent Non-Executive Director at the time of this trade.Isabel Hudson,,GBP,,,BT.A,,2025-06-25 23:08:00.703,2025-06-25 23:08:00.703
+2021-03-31,2021-03-31,Notification of Holding,Iain C Conn held the position of Senior Independent Director at the time of this trade.Iain C Conn,,GBP,,,BT.A,,2025-06-25 23:08:00.705,2025-06-25 23:08:00.705
+2021-03-31,2021-03-31,Notification of Holding,Ian Cheshire held the position of Independent Non-Executive Director at the time of this trade.Ian Cheshire,,GBP,,,BT.A,,2025-06-25 23:08:00.706,2025-06-25 23:08:00.706
+2021-03-31,2021-03-31,Notification of Holding,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,,BT.A,,2025-06-25 23:08:00.707,2025-06-25 23:08:00.707
+2021-03-26,2021-03-26,Buy,Jan du Plessis held the position of Chairman at the time of this trade.Jan du Plessis,147.0,GBP,,1000000,BT.A,,2025-06-25 23:08:00.708,2025-06-25 23:08:00.708
+2021-03-26,2021-03-26,Sell,Jan du Plessis held the position of Chairman at the time of this trade.Jan du Plessis,147.0,GBP,,1000000,BT.A,,2025-06-25 23:08:00.709,2025-06-25 23:08:00.709
+2020-08-07,2020-08-06,Sell,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,103.0,GBP,,24436,BT.A,,2025-06-25 23:08:00.711,2025-06-25 23:08:00.711
+2020-08-07,2020-08-06,Transfer From,Simon Lowth held the position of CFO at the time of this trade.Simon Lowth,,GBP,,51886,BT.A,,2025-06-25 23:08:00.712,2025-06-25 23:08:00.712
+2020-06-24,2020-06-24,Buy,Allison Kirkby held the position of Independent Non-Executive Director at the time of this trade.Allison Kirkby,118.0,GBP,,50000,BT.A,,2025-06-25 23:08:00.713,2025-06-25 23:08:00.713
+2020-06-16,2020-06-15,Buy,Leena Nair held the position of Independent Non-Executive Director at the time of this trade.Leena Nair,113.0,GBP,,50000,BT.A,,2025-06-25 23:08:00.714,2025-06-25 23:08:00.714
+2020-06-10,2020-06-08,Buy,Ian Cheshire held the position of Independent Non-Executive Director at the time of this trade.Ian Cheshire,126.0,GBP,,19646,BT.A,,2025-06-25 23:08:00.716,2025-06-25 23:08:00.716
+2020-05-21,2020-05-15,Buy,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,108.0,GBP,,1661,BT.A,,2025-06-25 23:08:00.717,2025-06-25 23:08:00.717
+2020-05-21,2020-05-15,Buy,Jan du Plessis held the position of Chairman at the time of this trade.Jan du Plessis,108.0,GBP,,1663,BT.A,,2025-06-25 23:08:00.718,2025-06-25 23:08:00.718
+2020-05-14,2020-05-12,Buy,Matthew Key held the position of Independent Non-Executive Director at the time of this trade.Matthew Key,109.9,GBP,,45753,BT.A,,2025-06-25 23:08:00.72,2025-06-25 23:08:00.72
+2020-05-14,2020-05-12,Buy,Iain C Conn held the position of Independent Non-Executive Director at the time of this trade.Iain C Conn,107.9,GBP,,50000,BT.A,,2025-06-25 23:08:00.721,2025-06-25 23:08:00.721
+2020-05-14,2020-05-13,Buy,Philip Jansen held the position of CEO at the time of this trade.Philip Jansen,109.6,GBP,,1834000,BT.A,,2025-06-25 23:08:00.722,2025-06-25 23:08:00.722
+2025-06-25,2025-06-25,Buy,Cathal Friel held the position of Executive Chairman at the time of this trade.Cathal Friel,2.5,GBP,,4000000,POLB,,2025-06-25 23:08:49.513,2025-06-25 23:08:49.513
+2024-02-22,2024-02-21,Buy,Jeremy Skillington held the position of CEO at the time of this trade.Jeremy Skillington,10.8,GBP,,154764,POLB,,2025-06-25 23:08:49.518,2025-06-25 23:08:49.518
+2024-02-19,2024-02-19,Buy,Cathal Friel held the position of Executive Chairman at the time of this trade.Cathal Friel,11.68,GBP,,830000,POLB,,2025-06-25 23:08:49.52,2025-06-25 23:08:49.52
+2022-10-06,2022-10-05,Buy,Jeremy Skillington held the position of CEO at the time of this trade.Jeremy Skillington,4.78,GBP,,718733,POLB,,2025-06-25 23:08:49.521,2025-06-25 23:08:49.521
+2021-07-19,2021-07-19,Notification of Holding,Patrick J Ashe held the position of Independent Non-Executive Director at the time of this trade.Patrick J Ashe,,GBP,,,POLB,,2025-06-25 23:08:49.522,2025-06-25 23:08:49.522
+2021-07-19,2021-07-19,Notification of Holding,Cathal Friel held the position of Non-Executive Chairman at the time of this trade.Cathal Friel,,GBP,,,POLB,,2025-06-25 23:08:49.524,2025-06-25 23:08:49.524
+2021-07-19,2021-07-19,Notification of Holding,Ian O'Connel held the position of CFO at the time of this trade.Ian O'Connel,,GBP,,,POLB,,2025-06-25 23:08:49.525,2025-06-25 23:08:49.525
+2025-06-02,2025-05-30,Buy,Bill Lennie held the position of Non-Executive Director at the time of this trade.Bill Lennie,277.0,GBP,,50000,KGF,,2025-06-25 23:09:38.19,2025-06-25 23:09:38.19
+2024-12-12,2024-12-12,Transfer To,Claudia Arney held the position of Chairman at the time of this trade.Claudia Arney,,GBP,,27762,KGF,,2025-06-25 23:09:38.196,2025-06-25 23:09:38.196
+2024-11-19,2024-11-15,Buy,Thierry Garnier held the position of CEO at the time of this trade.Thierry Garnier,291.98,GBP,,4942,KGF,,2025-06-25 23:09:38.197,2025-06-25 23:09:38.197
+2024-09-26,2024-09-26,Sell,Thierry Garnier held the position of CEO at the time of this trade.Thierry Garnier,323.55,GBP,,382415,KGF,,2025-06-25 23:09:38.199,2025-06-25 23:09:38.199
+2024-09-26,2024-09-25,Exercise of Option,Thierry Garnier held the position of CEO at the time of this trade.Thierry Garnier,,GBP,,1447573,KGF,,2025-06-25 23:09:38.202,2025-06-25 23:09:38.202
+2023-07-06,2023-07-05,Buy,Bill Lennie held the position of Non-Executive Director at the time of this trade.Bill Lennie,227.78,GBP,,70000,KGF,,2025-06-25 23:09:38.203,2025-06-25 23:09:38.203
+2023-01-31,2023-01-31,Notification of Holding,Rakhi Goss-Custard held the position of Independent Non-Executive Director at the time of this trade.Rakhi Goss-Custard,,GBP,,,KGF,,2025-06-25 23:09:38.204,2025-06-25 23:09:38.204
+2023-01-31,2023-01-31,Notification of Holding,Sophie Gasperment held the position of Independent Non-Executive Director at the time of this trade.Sophie Gasperment,,GBP,,,KGF,,2025-06-25 23:09:38.206,2025-06-25 23:09:38.206
+2023-01-31,2023-01-31,Notification of Holding,Jeff Carr held the position of Independent Non-Executive Director at the time of this trade.Jeff Carr,,GBP,,,KGF,,2025-06-25 23:09:38.207,2025-06-25 23:09:38.207
+2023-01-31,2023-01-31,Notification of Holding,Claudia Arney held the position of Independent Non-Executive Director at the time of this trade.Claudia Arney,,GBP,,,KGF,,2025-06-25 23:09:38.208,2025-06-25 23:09:38.208
+2023-01-31,2023-01-31,Notification of Holding,Catherine Bradley held the position of Senior Independent Director at the time of this trade.Catherine Bradley,,GBP,,,KGF,,2025-06-25 23:09:38.21,2025-06-25 23:09:38.21
+2023-01-31,2023-01-31,Notification of Holding,Andrew Cosslett held the position of Chairman at the time of this trade.Andrew Cosslett,,GBP,,,KGF,,2025-06-25 23:09:38.211,2025-06-25 23:09:38.211
+2022-06-08,2022-06-07,Buy,Catherine Bradley held the position of Senior Independent Director at the time of this trade.Catherine Bradley,261.7,GBP,,10000,KGF,,2025-06-25 23:09:38.212,2025-06-25 23:09:38.212
+2022-04-12,2022-04-11,Buy,Jeff Carr held the position of Independent Non-Executive Director at the time of this trade.Jeff Carr,259.7,GBP,,210000,KGF,,2025-06-25 23:09:38.213,2025-06-25 23:09:38.213
+2022-01-31,2022-01-31,Notification of Holding,Sophie Gasperment held the position of Independent Non-Executive Director at the time of this trade.Sophie Gasperment,,GBP,,,KGF,,2025-06-25 23:09:38.215,2025-06-25 23:09:38.215
+2021-10-20,2021-10-18,Buy,Bernard Bot held the position of CFO at the time of this trade.Bernard Bot,327.4,GBP,,30000,KGF,,2025-06-25 23:09:38.216,2025-06-25 23:09:38.216
+2021-10-20,2021-10-18,Buy,Thierry Garnier held the position of CEO at the time of this trade.Thierry Garnier,327.4,GBP,,40000,KGF,,2025-06-25 23:09:38.217,2025-06-25 23:09:38.217
+2021-06-04,2021-06-04,Buy,Andrew Cosslett held the position of Chairman at the time of this trade.Andrew Cosslett,346.0,GBP,,97690,KGF,,2025-06-25 23:09:38.219,2025-06-25 23:09:38.219
+2021-01-31,2021-01-31,Notification of Holding,Claudia Arney held the position of Non-Executive Director at the time of this trade.Claudia Arney,,GBP,,,KGF,,2025-06-25 23:09:38.22,2025-06-25 23:09:38.22
+2021-01-31,2021-01-31,Notification of Holding,Rakhi Goss-Custard held the position of Non-Executive Director at the time of this trade.Rakhi Goss-Custard,,GBP,,,KGF,,2025-06-25 23:09:38.221,2025-06-25 23:09:38.221
+2021-01-31,2021-01-31,Notification of Holding,Jeff Carr held the position of Non-Executive Director at the time of this trade.Jeff Carr,,GBP,,,KGF,,2025-06-25 23:09:38.223,2025-06-25 23:09:38.223
+2021-01-31,2021-01-31,Notification of Holding,Tony Buffin held the position of Non-Executive Director at the time of this trade.Tony Buffin,,GBP,,,KGF,,2025-06-25 23:09:38.224,2025-06-25 23:09:38.224
+2021-01-31,2021-01-31,Notification of Holding,Catherine Bradley held the position of Senior Independent Director at the time of this trade.Catherine Bradley,,GBP,,,KGF,,2025-06-25 23:09:38.225,2025-06-25 23:09:38.225
+2019-11-26,2019-11-25,Buy,Mark Seligman held the position of Senior Independent Director at the time of this trade.Mark Seligman,201.77,GBP,,10000,KGF,,2025-06-25 23:09:38.227,2025-06-25 23:09:38.227
+2019-11-26,2019-11-25,Buy,Andrew Cosslett held the position of Chairman at the time of this trade.Andrew Cosslett,203.68,GBP,,73643,KGF,,2025-06-25 23:09:38.228,2025-06-25 23:09:38.228
+2019-11-04,2019-11-01,Buy,Bernard Bot held the position of CFO at the time of this trade.Bernard Bot,208.0,GBP,,50000,KGF,,2025-06-25 23:09:38.229,2025-06-25 23:09:38.229
+2019-11-04,2019-10-30,Buy,Thierry Garnier held the position of CEO and Executive director at the time of this trade.Thierry Garnier,212.7,GBP,,60000,KGF,,2025-06-25 23:09:38.231,2025-06-25 23:09:38.231
+2019-04-23,2019-04-17,Buy,Jeff Carr held the position of Non-Executive Director at the time of this trade.Jeff Carr,261.0,GBP,,10000,KGF,,2025-06-25 23:09:38.232,2025-06-25 23:09:38.232
+2019-03-22,2019-03-21,Buy,Andrew Cosslett held the position of Chairman at the time of this trade.Andrew Cosslett,226.0,GBP,,70718,KGF,,2025-06-25 23:09:38.233,2025-06-25 23:09:38.233
+2019-03-22,2019-03-21,Buy,Sophie Gasperment held the position of Non-Executive Director at the time of this trade.Sophie Gasperment,226.8,GBP,,10000,KGF,,2025-06-25 23:09:38.235,2025-06-25 23:09:38.235
+2019-03-18,2019-03-15,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,242.89,GBP,,62,KGF,,2025-06-25 23:09:38.236,2025-06-25 23:09:38.236
+2019-02-18,2019-02-15,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,230.0,GBP,,65,KGF,,2025-06-25 23:09:38.237,2025-06-25 23:09:38.237
+2019-01-17,2019-01-15,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,225.67,GBP,,67,KGF,,2025-06-25 23:09:38.238,2025-06-25 23:09:38.238
+2018-12-18,2018-12-17,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,215.6,GBP,,69,KGF,,2025-06-25 23:09:38.24,2025-06-25 23:09:38.24
+2018-12-06,2018-12-05,Buy,Claudia Arney held the position of Non-Executive Director at the time of this trade.Claudia Arney,238.0,GBP,,27460,KGF,,2025-06-25 23:09:38.241,2025-06-25 23:09:38.241
+2018-12-06,2018-12-04,Sell,Karen Witts held the position of CFO at the time of this trade.Karen Witts,239.5,GBP,,14588,KGF,,2025-06-25 23:09:38.243,2025-06-25 23:09:38.243
+2018-12-06,2018-12-04,Exercise of Option,Karen Witts held the position of CFO at the time of this trade.Karen Witts,,GBP,,30914,KGF,,2025-06-25 23:09:38.244,2025-06-25 23:09:38.244
+2018-11-19,2018-11-16,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,242.5,GBP,,62,KGF,,2025-06-25 23:09:38.246,2025-06-25 23:09:38.246
+2018-11-14,2018-11-12,Buy Dividends,Karen Witts held the position of CFO at the time of this trade.Karen Witts,242.0,GBP,,39,KGF,,2025-06-25 23:09:38.247,2025-06-25 23:09:38.247
+2018-10-16,2018-10-15,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,251.2,GBP,,60,KGF,,2025-06-25 23:09:38.249,2025-06-25 23:09:38.249
+2018-09-17,2018-09-17,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,262.93,GBP,,56,KGF,,2025-06-25 23:09:38.25,2025-06-25 23:09:38.25
+2018-08-16,2018-08-15,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,287.2,GBP,,53,KGF,,2025-06-25 23:09:38.251,2025-06-25 23:09:38.251
+2017-12-04,2017-12-01,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,331.0,GBP,,46,KGF,,2025-06-25 23:09:38.253,2025-06-25 23:09:38.253
+2017-10-26,2017-10-24,Sell,Veronique Laury held the position of CEO at the time of this trade.Veronique Laury,302.9,GBP,,2294,KGF,,2025-06-25 23:09:38.254,2025-06-25 23:09:38.254
+2017-10-26,2017-10-24,Exercise of Option,Veronique Laury held the position of CEO at the time of this trade.Veronique Laury,,GBP,,8367,KGF,,2025-06-25 23:09:38.255,2025-06-25 23:09:38.255
+2017-10-17,2017-10-16,Buy,Karen Witts held the position of CFO at the time of this trade.Karen Witts,305.41,GBP,,49,KGF,,2025-06-25 23:09:38.257,2025-06-25 23:09:38.257
+2017-10-04,2017-10-03,Buy,Andrew Cosslett held the position of Non-Executive Director at the time of this trade.Andrew Cosslett,301.0,GBP,,99802,KGF,,2025-06-25 23:09:38.258,2025-06-25 23:09:38.258
+2025-06-25,2025-06-23,Exercise of Option,Geoffrey Robert Green held the position of CFO at the time of this trade.Geoffrey Robert Green,20.0,GBP,,50000,GMR,,2025-06-25 23:10:27.01,2025-06-25 23:10:27.01
+2025-06-25,2025-06-24,Sell,Geoffrey Robert Green held the position of CFO at the time of this trade.Geoffrey Robert Green,51.36,GBP,,200000,GMR,,2025-06-25 23:10:27.015,2025-06-25 23:10:27.015
+2023-08-14,2023-08-08,Buy,Mark Blandford held the position of Independent Non-Executive Director at the time of this trade.Mark Blandford,35.0,GBP,,250000,GMR,,2025-06-25 23:10:27.017,2025-06-25 23:10:27.017
+2023-08-07,2023-08-02,Buy,Anna Massion held the position of Independent Non-Executive Director at the time of this trade.Anna Massion,35.43,GBP,,33250,GMR,,2025-06-25 23:10:27.019,2025-06-25 23:10:27.019
+2023-08-07,2023-07-28,Buy,Mark Blandford held the position of Independent Non-Executive Director at the time of this trade.Mark Blandford,32.43,GBP,,69025,GMR,,2025-06-25 23:10:27.02,2025-06-25 23:10:27.02
+2022-07-12,2022-07-08,Buy,Mark Blandford held the position of Independent Non-Executive Director at the time of this trade.Mark Blandford,24.13,GBP,,250000,GMR,,2025-06-25 23:10:27.024,2025-06-25 23:10:27.024
+2022-06-23,2022-06-21,Sell,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,25.6,GBP,,1000000,GMR,,2025-06-25 23:10:27.026,2025-06-25 23:10:27.026
+2022-06-23,2022-06-21,Buy,Mark Blandford held the position of Independent Non-Executive Director at the time of this trade.Mark Blandford,24.0,GBP,,650582,GMR,,2025-06-25 23:10:27.027,2025-06-25 23:10:27.027
+2022-05-11,2022-05-09,Buy,Mark Blandford held the position of Independent Non-Executive Director at the time of this trade.Mark Blandford,25.72,GBP,,273827,GMR,,2025-06-25 23:10:27.028,2025-06-25 23:10:27.028
+2022-05-11,2022-05-06,Buy,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,27.0,GBP,,100000,GMR,,2025-06-25 23:10:27.031,2025-06-25 23:10:27.031
+2022-03-08,2022-03-04,Buy,Mark Blandford held the position of Non-Executive Director at the time of this trade.Mark Blandford,21.44,GBP,,32641,GMR,,2025-06-25 23:10:27.032,2025-06-25 23:10:27.032
+2022-03-08,2022-03-04,Buy,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,21.0,GBP,,100000,GMR,,2025-06-25 23:10:27.033,2025-06-25 23:10:27.033
+2021-12-07,2021-12-06,Sell,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,32.5,GBP,,1000000,GMR,,2025-06-25 23:10:27.035,2025-06-25 23:10:27.035
+2021-12-07,2021-12-06,Buy,Mark Blandford held the position of Non-Executive Director at the time of this trade.Mark Blandford,32.5,GBP,,1000000,GMR,,2025-06-25 23:10:27.036,2025-06-25 23:10:27.036
+2021-12-07,2021-12-02,Exercise of Option,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,10.0,GBP,,1000000,GMR,,2025-06-25 23:10:27.037,2025-06-25 23:10:27.037
+2021-06-14,2021-06-09,Buy,Mark Blandford held the position of Non-Executive Director at the time of this trade.Mark Blandford,36.48,GBP,,90000,GMR,,2025-06-25 23:10:27.039,2025-06-25 23:10:27.039
+2020-12-31,2020-12-31,Notification of Holding,Mark Wilson held the position of Non-Executive Director at the time of this trade.Mark Wilson,,GBP,,,GMR,,2025-06-25 23:10:27.041,2025-06-25 23:10:27.041
+2020-12-31,2020-12-31,Notification of Holding,Jim Ryan held the position of Non-Executive Director at the time of this trade.Jim Ryan,,GBP,,,GMR,,2025-06-25 23:10:27.043,2025-06-25 23:10:27.043
+2020-12-31,2020-12-31,Notification of Holding,Mark Segal held the position of CFO at the time of this trade.Mark Segal,,GBP,,,GMR,,2025-06-25 23:10:27.044,2025-06-25 23:10:27.044
+2020-12-18,2020-12-17,Sell,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,21.0,GBP,,500000,GMR,,2025-06-25 23:10:27.046,2025-06-25 23:10:27.046
+2020-09-18,2020-09-17,Sell,Jim Ryan held the position of Non-Executive Director at the time of this trade.Jim Ryan,22.37,GBP,,343926,GMR,,2025-06-25 23:10:27.048,2025-06-25 23:10:27.048
+2020-03-16,2020-03-13,Buy,Michael Buckley held the position of Non-Executive Chairman at the time of this trade.Michael Buckley,6.4,GBP,,150000,GMR,,2025-06-25 23:10:27.05,2025-06-25 23:10:27.05
+2020-02-12,2020-02-12,Buy,Michael Buckley held the position of Non-Executive Chairman at the time of this trade.Michael Buckley,8.0,GBP,,250000,GMR,,2025-06-25 23:10:27.051,2025-06-25 23:10:27.051
+2019-12-17,2019-12-13,Notification of Holding,Mark Blandford held the position of Non-Executive Director at the time of this trade.Mark Blandford,,GBP,,,GMR,,2025-06-25 23:10:27.053,2025-06-25 23:10:27.053
+2019-12-16,2019-12-13,Buy,Mark Blandford held the position of Non-Executive Director at the time of this trade.Mark Blandford,8.0,GBP,,5000000,GMR,,2025-06-25 23:10:27.054,2025-06-25 23:10:27.054
+2019-10-29,2019-10-25,Buy,Michael Buckley held the position of Non-Executive Chairman at the time of this trade.Michael Buckley,5.0,GBP,,2000000,GMR,,2025-06-25 23:10:27.055,2025-06-25 23:10:27.055
+2019-03-07,2019-03-07,Buy,Michael Buckley held the position of Non-Executive Chairman at the time of this trade.Michael Buckley,3.0,GBP,,1757576,GMR,,2025-06-25 23:10:27.056,2025-06-25 23:10:27.056
+2019-02-28,2019-02-27,Buy,Michael Buckley held the position of Non-Executive Chairman at the time of this trade.Michael Buckley,0.42,GBP,,242424,GMR,,2025-06-25 23:10:27.058,2025-06-25 23:10:27.058
+2017-08-08,2017-08-08,Buy,Simon Collins held the position of Executive Director at the time of this trade.Simon Collins,11.0,GBP,,181818,GMR,,2025-06-25 23:10:27.059,2025-06-25 23:10:27.059
+2017-08-08,2017-08-08,Buy,Patrick Southon held the position of CEO at the time of this trade.Patrick Southon,11.0,GBP,,681818,GMR,,2025-06-25 23:10:27.06,2025-06-25 23:10:27.06
+2017-08-08,2017-08-08,Buy,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,11.0,GBP,,1000000,GMR,,2025-06-25 23:10:27.061,2025-06-25 23:10:27.061
+2016-09-08,2016-09-02,Notification of Holding,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,,GBP,,,GMR,,2025-06-25 23:10:27.063,2025-06-25 23:10:27.063
+2016-09-08,2016-09-02,Notification of Holding,Simon Collins held the position of Executive Director at the time of this trade.Simon Collins,,GBP,,,GMR,,2025-06-25 23:10:27.064,2025-06-25 23:10:27.064
+2016-03-02,2016-03-02,Placing,Simon Collins held the position of Executive Director at the time of this trade.Simon Collins,20.0,GBP,,100000,GMR,,2025-06-25 23:10:27.065,2025-06-25 23:10:27.065
+2016-03-02,2016-03-02,Placing,Patrick Southon held the position of CEO at the time of this trade.Patrick Southon,20.0,GBP,,150000,GMR,,2025-06-25 23:10:27.067,2025-06-25 23:10:27.067
+2016-03-02,2016-03-02,Placing,Michael Buckley held the position of Executive Chairman at the time of this trade.Michael Buckley,20.0,GBP,,500000,GMR,,2025-06-25 23:10:27.068,2025-06-25 23:10:27.068
+2016-03-02,2016-03-02,Placing,Atul Bali held the position of Non-Executive Director at the time of this trade.Atul Bali,20.0,GBP,,825000,GMR,,2025-06-25 23:10:27.069,2025-06-25 23:10:27.069
+2025-06-25,2025-06-24,Transfer From,Imran Nawaz held the position of CFO at the time of this trade.Imran Nawaz,,GBP,,624311,TSCO,,2025-06-25 23:11:16.892,2025-06-25 23:11:16.892
+2025-06-25,2025-06-24,Transfer From,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,,GBP,,1298582,TSCO,,2025-06-25 23:11:16.896,2025-06-25 23:11:16.896
+2025-06-10,2025-06-06,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,391.79,GBP,,35,TSCO,,2025-06-25 23:11:16.898,2025-06-25 23:11:16.898
+2025-04-14,2025-04-11,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,324.78,GBP,,43,TSCO,,2025-06-25 23:11:16.9,2025-06-25 23:11:16.9
+2025-04-11,2025-04-11,Buy,Imran Nawaz held the position of CFO at the time of this trade.Imran Nawaz,325.3,GBP,,15370,TSCO,,2025-06-25 23:11:16.901,2025-06-25 23:11:16.901
+2025-04-11,2025-04-11,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,325.91,GBP,,40000,TSCO,,2025-06-25 23:11:16.902,2025-06-25 23:11:16.902
+2025-03-18,2025-03-14,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,371.0,GBP,,37,TSCO,,2025-06-25 23:11:16.904,2025-06-25 23:11:16.904
+2025-02-17,2025-02-14,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,394.67,GBP,,35,TSCO,,2025-06-25 23:11:16.905,2025-06-25 23:11:16.905
+2025-01-29,2025-01-29,Buy,Gerard Murphy held the position of Chairman at the time of this trade.Gerard Murphy,371.17,GBP,,40000,TSCO,,2025-06-25 23:11:16.906,2025-06-25 23:11:16.906
+2025-01-20,2025-01-17,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,364.47,GBP,,38,TSCO,,2025-06-25 23:11:16.908,2025-06-25 23:11:16.908
+2024-11-27,2024-11-22,Buy Dividends,Stewart Gilliland held the position of Independent Non-Executive Director at the time of this trade.Stewart Gilliland,354.22,GBP,,257,TSCO,,2025-06-25 23:11:16.909,2025-06-25 23:11:16.909
+2024-11-27,2024-11-22,Buy Dividends,Alison Platt held the position of Independent Non-Executive Director at the time of this trade.Alison Platt,349.9,GBP,,471,TSCO,,2025-06-25 23:11:16.911,2025-06-25 23:11:16.911
+2024-11-27,2024-11-22,Buy Dividends,Imran Nawaz held the position of CFO at the time of this trade.Imran Nawaz,354.22,GBP,,3835,TSCO,,2025-06-25 23:11:16.912,2025-06-25 23:11:16.912
+2024-11-27,2024-11-22,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,354.22,GBP,,39,TSCO,,2025-06-25 23:11:16.914,2025-06-25 23:11:16.914
+2024-11-26,2024-11-22,Buy,Bertrand Bodson held the position of Independent Non-Executive Director at the time of this trade.Bertrand Bodson,354.86,GBP,,734,TSCO,,2025-06-25 23:11:16.916,2025-06-25 23:11:16.916
+2024-10-28,2024-10-25,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,354.62,GBP,,39,TSCO,,2025-06-25 23:11:16.917,2025-06-25 23:11:16.917
+2024-10-01,2024-09-27,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,360.95,GBP,,39,TSCO,,2025-06-25 23:11:16.918,2025-06-25 23:11:16.918
+2024-09-02,2024-08-30,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,352.8,GBP,,39,TSCO,,2025-06-25 23:11:16.92,2025-06-25 23:11:16.92
+2024-08-05,2024-08-02,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,323.66,GBP,,42,TSCO,,2025-06-25 23:11:16.921,2025-06-25 23:11:16.921
+2024-07-08,2024-07-05,Buy,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,308.7,GBP,,45,TSCO,,2025-06-25 23:11:16.922,2025-06-25 23:11:16.922
+2024-07-03,2024-07-01,Buy Dividends,Bertrand Bodson held the position of Independent Non-Executive Director at the time of this trade.Bertrand Bodson,308.33,GBP,,1609,TSCO,,2025-06-25 23:11:16.924,2025-06-25 23:11:16.924
+2024-07-03,2024-07-01,Buy Dividends,Ken Murphy held the position of CEO at the time of this trade.Ken Murphy,308.95,GBP,,2067,TSCO,,2025-06-25 23:11:16.925,2025-06-25 23:11:16.925
+2024-07-03,2024-06-28,Buy Dividends,Stewart Gilliland held the position of Independent Non-Executive Director at the time of this trade.Stewart Gilliland,308.65,GBP,,1394,TSCO,,2025-06-25 23:11:16.926,2025-06-25 23:11:16.926
+2024-07-03,2024-07-01,Buy Dividends,Alison Platt held the position of Independent Non-Executive Director at the time of this trade.Alison Platt,308.95,GBP,,1010,TSCO,,2025-06-25 23:11:16.928,2025-06-25 23:11:16.928

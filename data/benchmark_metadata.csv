@@ -1,0 +1,2 @@
+benchmark_ticker,name,description,is_active,default_benchmark,created_at,updated_at
+^FTAI,FTSE AIM All-Share Index,Default benchmark for AIM-listed stocks,true,true,2025-06-25 22:42:50.424,2025-06-25 22:42:50.424

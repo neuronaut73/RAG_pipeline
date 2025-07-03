@@ -1,0 +1,201 @@
+id,ticker,notification_date,notifier,role,transaction_date,nature_of_transaction,number_of_securities,price_per_security,value_of_transaction,currency,total_holdings_post_transaction,scraped_at,created_at
+1,PAY,2025-06-17,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-06-12,Transfer From,,,,GBP,36423,2025-06-23 18:52:49.33,2025-06-23 18:52:49.33
+2,PAY,2025-05-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-05-22,Buy,,677.0000,,GBP,18,2025-06-23 18:52:49.333,2025-06-23 18:52:49.333
+3,PAY,2025-05-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-05-22,Transfer From,,,,GBP,18,2025-06-23 18:52:49.335,2025-06-23 18:52:49.335
+4,PAY,2025-05-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-05-22,Transfer From,,,,GBP,18,2025-06-23 18:52:49.337,2025-06-23 18:52:49.337
+5,PAY,2025-05-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-05-22,Buy,,677.0000,,GBP,18,2025-06-23 18:52:49.338,2025-06-23 18:52:49.338
+6,PAY,2025-04-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-04-22,Transfer From,,,,GBP,20,2025-06-23 18:52:49.34,2025-06-23 18:52:49.34
+7,PAY,2025-04-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-04-22,Buy,,641.5000,,GBP,20,2025-06-23 18:52:49.341,2025-06-23 18:52:49.341
+8,PAY,2025-04-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-04-22,Transfer From,,,,GBP,20,2025-06-23 18:52:49.342,2025-06-23 18:52:49.342
+9,PAY,2025-04-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-04-22,Buy,,641.5000,,GBP,20,2025-06-23 18:52:49.344,2025-06-23 18:52:49.344
+10,PAY,2025-03-31,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-03-31,Buy,,632.0000,,GBP,12,2025-06-23 18:52:49.345,2025-06-23 18:52:49.345
+11,PAY,2025-03-31,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-03-31,Buy Dividends,,632.0000,,GBP,41,2025-06-23 18:52:49.346,2025-06-23 18:52:49.346
+12,PAY,2025-03-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-03-25,Buy,,632.9000,,GBP,19,2025-06-23 18:52:49.348,2025-06-23 18:52:49.348
+13,PAY,2025-03-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-03-25,Transfer From,,,,GBP,19,2025-06-23 18:52:49.349,2025-06-23 18:52:49.349
+14,PAY,2025-03-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-03-25,Transfer From,,,,GBP,20,2025-06-23 18:52:49.35,2025-06-23 18:52:49.35
+15,PAY,2025-03-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-03-25,Buy,,632.9000,,GBP,20,2025-06-23 18:52:49.351,2025-06-23 18:52:49.351
+16,PAY,2025-02-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-02-24,Transfer From,,,,GBP,18,2025-06-23 18:52:49.353,2025-06-23 18:52:49.353
+17,PAY,2025-02-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-02-24,Buy,,680.0000,,GBP,18,2025-06-23 18:52:49.354,2025-06-23 18:52:49.354
+18,PAY,2025-02-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-02-24,Transfer From,,,,GBP,19,2025-06-23 18:52:49.355,2025-06-23 18:52:49.355
+19,PAY,2025-02-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-02-24,Buy,,680.0000,,GBP,19,2025-06-23 18:52:49.357,2025-06-23 18:52:49.357
+20,PAY,2025-01-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-01-22,Buy,,695.0000,,GBP,18,2025-06-23 18:52:49.358,2025-06-23 18:52:49.358
+21,PAY,2025-01-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2025-01-22,Transfer From,,,,GBP,18,2025-06-23 18:52:49.36,2025-06-23 18:52:49.36
+22,PAY,2025-01-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-01-22,Buy,,695.0000,,GBP,18,2025-06-23 18:52:49.361,2025-06-23 18:52:49.361
+23,PAY,2025-01-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2025-01-22,Transfer From,,,,GBP,18,2025-06-23 18:52:49.363,2025-06-23 18:52:49.363
+24,PAY,2024-12-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-12-20,Transfer From,,,,GBP,16,2025-06-23 18:52:49.364,2025-06-23 18:52:49.364
+25,PAY,2024-12-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-12-20,Transfer From,,,,GBP,16,2025-06-23 18:52:49.365,2025-06-23 18:52:49.365
+26,PAY,2024-12-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-12-20,Buy,,762.0000,,GBP,16,2025-06-23 18:52:49.367,2025-06-23 18:52:49.367
+27,PAY,2024-12-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-12-20,Buy,,762.0000,,GBP,16,2025-06-23 18:52:49.368,2025-06-23 18:52:49.368
+28,PAY,2024-12-20,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-12-20,Buy Dividends,,762.0000,,GBP,9,2025-06-23 18:52:49.369,2025-06-23 18:52:49.369
+29,PAY,2024-12-20,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-12-20,Buy Dividends,,762.0000,,GBP,31,2025-06-23 18:52:49.37,2025-06-23 18:52:49.37
+30,PAY,2024-11-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-11-22,Notification of Holding,,,,GBP,16,2025-06-23 18:52:49.372,2025-06-23 18:52:49.372
+31,PAY,2024-11-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-11-22,Buy,,792.0000,,GBP,16,2025-06-23 18:52:49.373,2025-06-23 18:52:49.373
+32,PAY,2024-11-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-11-22,Notification of Holding,,,,GBP,16,2025-06-23 18:52:49.374,2025-06-23 18:52:49.374
+33,PAY,2024-11-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-11-22,Buy,,792.0000,,GBP,16,2025-06-23 18:52:49.376,2025-06-23 18:52:49.376
+34,PAY,2024-10-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-10-22,Transfer From,,,,GBP,17,2025-06-23 18:52:49.377,2025-06-23 18:52:49.377
+35,PAY,2024-10-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-10-22,Buy,,745.9000,,GBP,17,2025-06-23 18:52:49.379,2025-06-23 18:52:49.379
+36,PAY,2024-10-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-10-22,Transfer From,,,,GBP,17,2025-06-23 18:52:49.38,2025-06-23 18:52:49.38
+37,PAY,2024-10-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-10-22,Buy,,745.9000,,GBP,17,2025-06-23 18:52:49.382,2025-06-23 18:52:49.382
+38,PAY,2024-10-01,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-09-30,Buy Dividends,,682.0000,,GBP,7,2025-06-23 18:52:49.383,2025-06-23 18:52:49.383
+39,PAY,2024-10-01,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-09-30,Buy Dividends,,682.0000,,GBP,33,2025-06-23 18:52:49.384,2025-06-23 18:52:49.384
+40,PAY,2024-09-24,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-09-23,Buy,,682.5000,,GBP,18,2025-06-23 18:52:49.386,2025-06-23 18:52:49.386
+41,PAY,2024-09-24,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-09-23,Transfer From,,,,GBP,18,2025-06-23 18:52:49.387,2025-06-23 18:52:49.387
+42,PAY,2024-09-24,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-09-23,Buy,,682.5000,,GBP,18,2025-06-23 18:52:49.388,2025-06-23 18:52:49.388
+43,PAY,2024-09-24,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-09-23,Transfer From,,,,GBP,18,2025-06-23 18:52:49.39,2025-06-23 18:52:49.39
+44,PAY,2024-08-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-08-22,Transfer From,,,,GBP,18,2025-06-23 18:52:49.391,2025-06-23 18:52:49.391
+45,PAY,2024-08-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-08-22,Buy,,696.0400,,GBP,18,2025-06-23 18:52:49.392,2025-06-23 18:52:49.392
+46,PAY,2024-08-15,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-08-14,Transfer From,,686.0000,,GBP,23264,2025-06-23 18:52:49.393,2025-06-23 18:52:49.393
+47,PAY,2024-08-15,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-08-14,Transfer From,,686.0000,,GBP,32846,2025-06-23 18:52:49.395,2025-06-23 18:52:49.395
+48,PAY,2024-08-07,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-08-07,Buy Dividends,,664.0000,,GBP,32,2025-06-23 18:52:49.397,2025-06-23 18:52:49.397
+49,PAY,2024-08-07,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-08-07,Buy Dividends,,664.0000,,GBP,7,2025-06-23 18:52:49.398,2025-06-23 18:52:49.398
+50,PAY,2024-08-05,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-08-01,Transfer From,,,,GBP,9573,2025-06-23 18:52:49.399,2025-06-23 18:52:49.399
+51,PAY,2024-08-05,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-08-01,Exercise of Option,,,,GBP,1298,2025-06-23 18:52:49.401,2025-06-23 18:52:49.401
+52,PAY,2024-07-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-07-22,Transfer From,,,,GBP,19,2025-06-23 18:52:49.402,2025-06-23 18:52:49.402
+53,PAY,2024-07-23,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-07-22,Buy,,666.7000,,GBP,19,2025-06-23 18:52:49.403,2025-06-23 18:52:49.403
+54,PAY,2024-07-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-07-22,Transfer From,,,,GBP,19,2025-06-23 18:52:49.404,2025-06-23 18:52:49.404
+55,PAY,2024-07-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-07-22,Buy,,666.7000,,GBP,19,2025-06-23 18:52:49.406,2025-06-23 18:52:49.406
+56,PAY,2024-07-02,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-07-01,Transfer From,,,,GBP,670,2025-06-23 18:52:49.407,2025-06-23 18:52:49.407
+57,PAY,2024-06-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-06-24,Buy,,646.0000,,GBP,19,2025-06-23 18:52:49.408,2025-06-23 18:52:49.408
+58,PAY,2024-06-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-06-24,Transfer From,,,,GBP,19,2025-06-23 18:52:49.409,2025-06-23 18:52:49.409
+59,PAY,2024-06-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-06-24,Transfer From,,,,GBP,19,2025-06-23 18:52:49.411,2025-06-23 18:52:49.411
+60,PAY,2024-06-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-06-24,Buy,,646.0000,,GBP,19,2025-06-23 18:52:49.413,2025-06-23 18:52:49.413
+61,PAY,2024-05-28,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-05-22,Transfer From,,,,GBP,23,2025-06-23 18:52:49.414,2025-06-23 18:52:49.414
+62,PAY,2024-05-28,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-05-22,Transfer From,,,,GBP,22,2025-06-23 18:52:49.415,2025-06-23 18:52:49.415
+63,PAY,2024-05-28,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-05-22,Buy,,557.5000,,GBP,23,2025-06-23 18:52:49.417,2025-06-23 18:52:49.417
+64,PAY,2024-05-28,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-05-22,Buy,,557.5000,,GBP,22,2025-06-23 18:52:49.418,2025-06-23 18:52:49.418
+65,PAY,2024-04-24,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-04-22,Transfer From,,,,GBP,23,2025-06-23 18:52:49.419,2025-06-23 18:52:49.419
+66,PAY,2024-04-24,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-04-22,Transfer From,,,,GBP,24,2025-06-23 18:52:49.42,2025-06-23 18:52:49.42
+67,PAY,2024-04-24,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-04-22,Buy,,531.4800,,GBP,23,2025-06-23 18:52:49.422,2025-06-23 18:52:49.422
+68,PAY,2024-04-24,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-04-22,Buy,,531.4800,,GBP,24,2025-06-23 18:52:49.423,2025-06-23 18:52:49.423
+69,PAY,2024-03-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-03-22,Transfer From,,,,GBP,26,2025-06-23 18:52:49.424,2025-06-23 18:52:49.424
+70,PAY,2024-03-25,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-03-22,Buy,,487.0200,,GBP,26,2025-06-23 18:52:49.425,2025-06-23 18:52:49.425
+71,PAY,2024-03-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-03-22,Buy,,487.0200,,GBP,26,2025-06-23 18:52:49.427,2025-06-23 18:52:49.427
+72,PAY,2024-03-25,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-03-22,Transfer From,,,,GBP,26,2025-06-23 18:52:49.428,2025-06-23 18:52:49.428
+73,PAY,2024-03-05,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-03-05,Buy Dividends,,489.5000,,GBP,38,2025-06-23 18:52:49.429,2025-06-23 18:52:49.429
+74,PAY,2024-03-05,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-03-05,Buy Dividends,,489.5000,,GBP,5,2025-06-23 18:52:49.431,2025-06-23 18:52:49.431
+75,PAY,2024-02-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-02-22,Transfer From,,,,GBP,25,2025-06-23 18:52:49.432,2025-06-23 18:52:49.432
+76,PAY,2024-02-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-02-22,Buy,,504.2500,,GBP,25,2025-06-23 18:52:49.433,2025-06-23 18:52:49.433
+77,PAY,2024-02-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-02-22,Transfer From,,,,GBP,24,2025-06-23 18:52:49.435,2025-06-23 18:52:49.435
+78,PAY,2024-02-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-02-22,Buy,,504.2500,,GBP,24,2025-06-23 18:52:49.436,2025-06-23 18:52:49.436
+79,PAY,2024-01-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-01-22,Buy,,519.5200,,GBP,24,2025-06-23 18:52:49.437,2025-06-23 18:52:49.437
+80,PAY,2024-01-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-01-22,Transfer From,,,,GBP,24,2025-06-23 18:52:49.438,2025-06-23 18:52:49.438
+81,PAY,2024-01-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-01-22,Transfer From,,,,GBP,24,2025-06-23 18:52:49.44,2025-06-23 18:52:49.44
+82,PAY,2024-01-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-01-22,Buy,,519.5200,,GBP,24,2025-06-23 18:52:49.441,2025-06-23 18:52:49.441
+83,PAY,2024-01-03,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2024-01-02,Buy Dividends,,514.0000,,GBP,2,2025-06-23 18:52:49.442,2025-06-23 18:52:49.442
+84,PAY,2024-01-03,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2024-01-02,Buy Dividends,,514.0000,,GBP,34,2025-06-23 18:52:49.443,2025-06-23 18:52:49.443
+85,PAY,2023-12-21,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2023-12-21,Transfer From,,,,GBP,25,2025-06-23 18:52:49.445,2025-06-23 18:52:49.445
+86,PAY,2023-12-21,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2023-12-21,Buy,,510.0000,,GBP,25,2025-06-23 18:52:49.446,2025-06-23 18:52:49.446
+87,PAY,2023-12-21,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-12-21,Transfer From,,,,GBP,24,2025-06-23 18:52:49.447,2025-06-23 18:52:49.447
+88,PAY,2023-12-21,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-12-21,Buy,,510.0000,,GBP,24,2025-06-23 18:52:49.449,2025-06-23 18:52:49.449
+89,PAY,2023-12-11,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-12-11,Buy,,463.8600,,GBP,50000,2025-06-23 18:52:49.45,2025-06-23 18:52:49.45
+90,PAY,2023-11-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-11-22,Transfer From,,,,GBP,23,2025-06-23 18:52:49.451,2025-06-23 18:52:49.451
+91,PAY,2023-11-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-11-22,Buy,,535.2400,,GBP,23,2025-06-23 18:52:49.453,2025-06-23 18:52:49.453
+92,PAY,2023-11-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2023-11-22,Transfer From,,,,GBP,23,2025-06-23 18:52:49.454,2025-06-23 18:52:49.454
+93,PAY,2023-11-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2023-11-22,Buy,,535.2400,,GBP,23,2025-06-23 18:52:49.455,2025-06-23 18:52:49.455
+94,PAY,2023-10-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-10-23,Buy,,511.1200,,GBP,25,2025-06-23 18:52:49.456,2025-06-23 18:52:49.456
+95,PAY,2023-10-23,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-10-23,Transfer From,,,,GBP,25,2025-06-23 18:52:49.457,2025-06-23 18:52:49.457
+96,PAY,2023-09-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-09-22,Transfer From,,,,GBP,1209,2025-06-23 18:52:49.459,2025-06-23 18:52:49.459
+97,PAY,2023-09-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-09-22,Buy,,549.5000,,GBP,1209,2025-06-23 18:52:49.46,2025-06-23 18:52:49.46
+98,PAY,2023-09-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2023-09-22,Transfer From,,,,GBP,44,2025-06-23 18:52:49.462,2025-06-23 18:52:49.462
+99,PAY,2023-09-22,Rob Harding held the position of CFO at the time of this trade.Rob Harding,,2023-09-22,Buy,,549.5000,,GBP,44,2025-06-23 18:52:49.463,2025-06-23 18:52:49.463
+100,PAY,2023-09-04,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-09-01,Buy Dividends,,553.5000,,GBP,20,2025-06-23 18:52:49.464,2025-06-23 18:52:49.464
+101,PAY,2023-08-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-08-22,Buy,,531.1200,,GBP,23,2025-06-23 18:52:49.466,2025-06-23 18:52:49.466
+102,PAY,2023-08-22,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-08-22,Buy,,531.1200,,GBP,23,2025-06-23 18:52:49.467,2025-06-23 18:52:49.467
+103,PAY,2023-08-14,Ben Wishart held the position of Independent Non-Executive Director at the time of this trade.Ben Wishart,,2023-08-14,Buy,,553.0000,,GBP,3500,2025-06-23 18:52:49.468,2025-06-23 18:52:49.468
+104,PAY,2023-07-21,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-07-21,Buy,,456.6200,,GBP,28,2025-06-23 18:52:49.47,2025-06-23 18:52:49.47
+105,PAY,2023-07-21,Nick Wiles held the position of CEO at the time of this trade.Nick Wiles,,2023-07-21,Buy,,456.6200,,GBP,28,2025-06-23 18:52:49.471,2025-06-23 18:52:49.471
+106,PAY,2023-07-21,Alan Dale held the position of Finance Director at the time of this trade.Alan Dale,,2023-07-21,Buy,,456.6200,,GBP,28,2025-06-23 18:52:49.472,2025-06-23 18:52:49.472
+107,PAY,2023-07-21,Alan Dale held the position of Finance Director at the time of this trade.Alan Dale,,2023-07-21,Buy,,456.6200,,GBP,28,2025-06-23 18:52:49.473,2025-06-23 18:52:49.473
+108,DNLM,2025-06-17,Karen Witts held the position of CFO at the time of this trade.Karen Witts,,2025-06-16,Sell,,1178.0000,,GBP,24277,2025-06-23 18:53:15.279,2025-06-23 18:53:15.279
+109,DNLM,2025-06-17,Karen Witts held the position of CFO at the time of this trade.Karen Witts,,2025-06-16,Exercise of Option,,,,GBP,51496,2025-06-23 18:53:15.281,2025-06-23 18:53:15.281
+110,DNLM,2025-05-08,Ajay Kavan held the position of Non-Executive Director at the time of this trade.Ajay Kavan,,2025-05-07,Buy,,1141.7900,,GBP,2621,2025-06-23 18:53:15.282,2025-06-23 18:53:15.282
+111,DNLM,2024-11-01,Karen Witts held the position of CFO at the time of this trade.Karen Witts,,2024-10-31,Buy,,1126.0000,,GBP,8375,2025-06-23 18:53:15.284,2025-06-23 18:53:15.284
+112,DNLM,2024-10-30,Nick Wilkinson held the position of Chief Executive Officer at the time of this trade.Nick Wilkinson,,2024-10-29,Exercise of Option,,,,GBP,59896,2025-06-23 18:53:15.285,2025-06-23 18:53:15.285
+113,DNLM,2024-10-30,Nick Wilkinson held the position of Chief Executive Officer at the time of this trade.Nick Wilkinson,,2024-10-29,Sell,,1161.0000,,GBP,28236,2025-06-23 18:53:15.287,2025-06-23 18:53:15.287
+114,DNLM,2024-10-02,Luisa Wright held the position of Company Secretary at the time of this trade.Luisa Wright,,2024-10-02,Buy,,1139.1000,,GBP,2452,2025-06-23 18:53:15.288,2025-06-23 18:53:15.288
+115,DNLM,2024-10-02,Nick Wilkinson held the position of Chief Executive Officer at the time of this trade.Nick Wilkinson,,2024-10-01,Buy,,1164.7000,,GBP,9941,2025-06-23 18:53:15.289,2025-06-23 18:53:15.289
+116,DNLM,2024-09-24,Will Adderley held the position of Deputy Chairman at the time of this trade.Will Adderley,,2024-09-23,Placing,,1140.0000,,GBP,10000000,2025-06-23 18:53:15.291,2025-06-23 18:53:15.291
+117,DNLM,2024-05-20,Ajay Kavan held the position of Non-Executive Director at the time of this trade.Ajay Kavan,,2024-05-20,Buy,,1020.0000,,GBP,2450,2025-06-23 18:53:15.292,2025-06-23 18:53:15.292
+118,DNLM,2024-05-07,Ajay Kavan held the position of Non-Executive Director at the time of this trade.Ajay Kavan,,2024-05-07,Buy,,1011.5500,,GBP,2471,2025-06-23 18:53:15.293,2025-06-23 18:53:15.293
+119,DNLM,2023-12-08,Will Adderley held the position of Deputy Chairman at the time of this trade.Will Adderley,,2023-12-07,Transfer From,,,,GBP,11000000,2025-06-23 18:53:15.295,2025-06-23 18:53:15.295
+120,DNLM,2023-12-08,Will Adderley held the position of Deputy Chairman at the time of this trade.Will Adderley,,2023-12-07,Transfer From,,,,GBP,1000000,2025-06-23 18:53:15.296,2025-06-23 18:53:15.296
+121,DNLM,2023-12-06,Nick Wilkinson held the position of Chief Executive Officer at the time of this trade.Nick Wilkinson,,2023-12-05,Sell,,1049.0000,,GBP,41710,2025-06-23 18:53:15.297,2025-06-23 18:53:15.297
+122,DNLM,2023-12-06,Nick Wilkinson held the position of Chief Executive Officer at the time of this trade.Nick Wilkinson,,2023-12-05,Exercise of Option,,,,GBP,88477,2025-06-23 18:53:15.298,2025-06-23 18:53:15.298
+123,DNLM,2023-11-21,Nick Wilkinson held the position of Chief Executive Officer at the time of this trade.Nick Wilkinson,,2023-11-20,Buy,,1091.0000,,GBP,10843,2025-06-23 18:53:15.3,2025-06-23 18:53:15.3
+124,DNLM,2023-11-15,Karen Witts held the position of CFO at the time of this trade.Karen Witts,,2023-11-14,Buy,,1047.0000,,GBP,8531,2025-06-23 18:53:15.302,2025-06-23 18:53:15.302
+125,DNLM,2023-11-02,Luisa Wright held the position of Company Secretary at the time of this trade.Luisa Wright,,2023-11-01,Sell,,974.5000,,GBP,4219,2025-06-23 18:53:15.303,2025-06-23 18:53:15.303
+126,DNLM,2023-11-02,Luisa Wright held the position of Company Secretary at the time of this trade.Luisa Wright,,2023-11-01,Transfer From,,,,GBP,8949,2025-06-23 18:53:15.304,2025-06-23 18:53:15.304
+127,MTO,2025-06-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-06-13,Transfer From,,,,GBP,52,2025-06-23 18:54:06.691,2025-06-23 18:54:06.691
+128,MTO,2025-06-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-06-13,Buy,,144.0000,,GBP,104,2025-06-23 18:54:06.694,2025-06-23 18:54:06.694
+129,MTO,2025-06-11,Simon Kirkpatrick held the position of Group CFO at the time of this trade.Simon Kirkpatrick,,2025-06-10,Transfer From,,,,GBP,155386,2025-06-23 18:54:06.696,2025-06-23 18:54:06.696
+130,MTO,2025-06-11,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-06-10,Transfer From,,,,GBP,440220,2025-06-23 18:54:06.697,2025-06-23 18:54:06.697
+131,MTO,2025-06-09,Christopher Rogers held the position of Non-Executive Director at the time of this trade.Christopher Rogers,,2025-06-06,Buy,,137.0000,,GBP,144000,2025-06-23 18:54:06.698,2025-06-23 18:54:06.698
+132,MTO,2025-05-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-05-13,Transfer From,,,,GBP,50,2025-06-23 18:54:06.7,2025-06-23 18:54:06.7
+133,MTO,2025-05-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-05-13,Buy,,149.0000,,GBP,101,2025-06-23 18:54:06.701,2025-06-23 18:54:06.701
+134,MTO,2025-04-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-04-14,Transfer From,,,,GBP,63,2025-06-23 18:54:06.702,2025-06-23 18:54:06.702
+135,MTO,2025-04-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-04-14,Buy,,120.1300,,GBP,125,2025-06-23 18:54:06.703,2025-06-23 18:54:06.703
+136,MTO,2025-04-02,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2025-04-01,Buy,,115.5000,,GBP,2726,2025-06-23 18:54:06.705,2025-06-23 18:54:06.705
+137,MTO,2025-04-02,Mary Reilly held the position of Independent Non-Executive Director at the time of this trade.Mary Reilly,,2025-04-01,Buy,,115.5000,,GBP,2070,2025-06-23 18:54:06.706,2025-06-23 18:54:06.706
+138,MTO,2025-04-02,Derek Mapp held the position of Non-Executive Chairman at the time of this trade.Derek Mapp,,2025-04-01,Buy,,115.5000,,GBP,8571,2025-06-23 18:54:06.707,2025-06-23 18:54:06.707
+139,MTO,2025-03-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-03-13,Transfer From,,,,GBP,67,2025-06-23 18:54:06.708,2025-06-23 18:54:06.708
+140,MTO,2025-03-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-03-13,Buy,,112.0000,,GBP,134,2025-06-23 18:54:06.71,2025-06-23 18:54:06.71
+141,MTO,2025-02-18,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-02-13,Transfer From,,,,GBP,63,2025-06-23 18:54:06.712,2025-06-23 18:54:06.712
+142,MTO,2025-02-18,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-02-13,Buy,,111.9200,,GBP,126,2025-06-23 18:54:06.713,2025-06-23 18:54:06.713
+143,MTO,2025-02-07,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-02-05,Buy Dividends,,116.4600,,GBP,113,2025-06-23 18:54:06.714,2025-06-23 18:54:06.714
+144,MTO,2025-02-06,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2025-02-05,Buy Dividends,,115.7200,,GBP,247,2025-06-23 18:54:06.716,2025-06-23 18:54:06.716
+145,MTO,2025-02-04,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-02-03,Exercise of Option,,50.4000,,GBP,35714,2025-06-23 18:54:06.717,2025-06-23 18:54:06.717
+146,MTO,2025-01-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-01-13,Transfer From,,,,GBP,69,2025-06-23 18:54:06.718,2025-06-23 18:54:06.718
+147,MTO,2025-01-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2025-01-13,Buy,,108.6800,,GBP,138,2025-06-23 18:54:06.719,2025-06-23 18:54:06.719
+148,MTO,2025-01-02,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2025-01-02,Buy,,110.5300,,GBP,2510,2025-06-23 18:54:06.721,2025-06-23 18:54:06.721
+149,MTO,2025-01-02,Derek Mapp held the position of Non-Executive Chairman at the time of this trade.Derek Mapp,,2025-01-02,Buy,,110.5300,,GBP,8802,2025-06-23 18:54:06.722,2025-06-23 18:54:06.722
+150,MTO,2025-01-02,Mary Reilly held the position of Independent Non-Executive Director at the time of this trade.Mary Reilly,,2025-01-02,Buy,,110.5300,,GBP,1894,2025-06-23 18:54:06.723,2025-06-23 18:54:06.723
+151,MTO,2024-12-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-12-13,Transfer From,,,,GBP,68,2025-06-23 18:54:06.724,2025-06-23 18:54:06.724
+152,MTO,2024-12-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-12-13,Buy,,110.2900,,GBP,136,2025-06-23 18:54:06.726,2025-06-23 18:54:06.726
+153,MTO,2024-11-22,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-11-21,Buy,,108.5900,,GBP,200000,2025-06-23 18:54:06.727,2025-06-23 18:54:06.727
+154,MTO,2024-11-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-11-13,Transfer From,,,,GBP,66,2025-06-23 18:54:06.728,2025-06-23 18:54:06.728
+155,MTO,2024-11-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-11-13,Buy,,112.6700,,GBP,133,2025-06-23 18:54:06.73,2025-06-23 18:54:06.73
+156,MTO,2024-10-18,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-10-16,Sell,,117.0200,,GBP,4750000,2025-06-23 18:54:06.731,2025-06-23 18:54:06.731
+157,MTO,2024-10-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-10-14,Transfer From,,,,GBP,63,2025-06-23 18:54:06.732,2025-06-23 18:54:06.732
+158,MTO,2024-10-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-10-14,Buy,,111.9300,,GBP,125,2025-06-23 18:54:06.734,2025-06-23 18:54:06.734
+159,MTO,2024-10-01,Derek Mapp held the position of Non-Executive Chairman at the time of this trade.Derek Mapp,,2024-10-01,Buy,,118.8000,,GBP,8189,2025-06-23 18:54:06.735,2025-06-23 18:54:06.735
+160,MTO,2024-09-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-09-13,Transfer From,,,,GBP,62,2025-06-23 18:54:06.736,2025-06-23 18:54:06.736
+161,MTO,2024-09-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-09-13,Buy,,120.3500,,GBP,125,2025-06-23 18:54:06.737,2025-06-23 18:54:06.737
+162,MTO,2024-08-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-08-13,Transfer From,,,,GBP,62,2025-06-23 18:54:06.739,2025-06-23 18:54:06.739
+163,MTO,2024-08-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-08-13,Transfer From,,,,GBP,62,2025-06-23 18:54:06.74,2025-06-23 18:54:06.74
+164,MTO,2024-08-15,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-08-13,Buy,,120.8900,,GBP,124,2025-06-23 18:54:06.741,2025-06-23 18:54:06.741
+165,MTO,2024-08-07,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-08-05,Buy,,117.0900,,GBP,222,2025-06-23 18:54:06.742,2025-06-23 18:54:06.742
+166,MTO,2024-08-06,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2024-08-05,Buy Dividends,,116.1800,,GBP,441,2025-06-23 18:54:06.743,2025-06-23 18:54:06.743
+167,MTO,2024-08-02,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-07-31,Exercise of Option,,,,GBP,2276,2025-06-23 18:54:06.745,2025-06-23 18:54:06.745
+168,MTO,2024-08-02,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-07-31,Sell,,120.2400,,GBP,2276,2025-06-23 18:54:06.746,2025-06-23 18:54:06.746
+169,MTO,2024-07-17,Simon Kirkpatrick held the position of Group CFO at the time of this trade.Simon Kirkpatrick,,2024-07-15,Sell,,121.8000,,GBP,16390,2025-06-23 18:54:06.747,2025-06-23 18:54:06.747
+170,MTO,2024-07-17,Simon Kirkpatrick held the position of Group CFO at the time of this trade.Simon Kirkpatrick,,2024-07-15,Buy,,121.8000,,GBP,16390,2025-06-23 18:54:06.749,2025-06-23 18:54:06.749
+171,MTO,2024-07-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-07-15,Transfer From,,,,GBP,62,2025-06-23 18:54:06.75,2025-06-23 18:54:06.75
+172,MTO,2024-07-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-07-15,Buy,,121.8000,,GBP,123,2025-06-23 18:54:06.751,2025-06-23 18:54:06.751
+173,MTO,2024-07-01,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2024-07-01,Buy,,117.5600,,GBP,2360,2025-06-23 18:54:06.753,2025-06-23 18:54:06.753
+174,MTO,2024-07-01,Mary Reilly held the position of Independent Non-Executive Director at the time of this trade.Mary Reilly,,2024-07-01,Buy,,117.5500,,GBP,1781,2025-06-23 18:54:06.754,2025-06-23 18:54:06.754
+175,MTO,2024-07-01,Derek Mapp held the position of Non-Executive Chairman at the time of this trade.Derek Mapp,,2024-07-01,Buy,,117.5600,,GBP,8284,2025-06-23 18:54:06.755,2025-06-23 18:54:06.755
+176,MTO,2024-06-24,Simon Kirkpatrick held the position of Group CFO at the time of this trade.Simon Kirkpatrick,,2024-06-21,Sell,,117.2000,,GBP,349151,2025-06-23 18:54:06.756,2025-06-23 18:54:06.756
+177,MTO,2024-06-19,Chet Patel held the position of Independent Non-Executive Director at the time of this trade.Chet Patel,,2024-06-17,Buy,,113.9800,,GBP,28781,2025-06-23 18:54:06.758,2025-06-23 18:54:06.758
+178,MTO,2024-06-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-06-13,Transfer From,,,,GBP,64,2025-06-23 18:54:06.759,2025-06-23 18:54:06.759
+179,MTO,2024-06-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-06-13,Buy,,117.0000,,GBP,128,2025-06-23 18:54:06.76,2025-06-23 18:54:06.76
+180,MTO,2024-06-11,Simon Kirkpatrick held the position of Group CFO at the time of this trade.Simon Kirkpatrick,,2024-06-10,Transfer From,,,,GBP,349151,2025-06-23 18:54:06.761,2025-06-23 18:54:06.761
+181,MTO,2024-06-11,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-06-10,Transfer From,,,,GBP,1105008,2025-06-23 18:54:06.763,2025-06-23 18:54:06.763
+182,MTO,2024-05-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-05-13,Transfer From,,,,GBP,62,2025-06-23 18:54:06.764,2025-06-23 18:54:06.764
+183,MTO,2024-05-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-05-13,Buy,,119.0000,,GBP,125,2025-06-23 18:54:06.765,2025-06-23 18:54:06.765
+184,MTO,2024-05-01,Simon Kirkpatrick held the position of Group CFO at the time of this trade.Simon Kirkpatrick,,2024-04-29,Transfer From,,,,GBP,29521,2025-06-23 18:54:06.767,2025-06-23 18:54:06.767
+185,MTO,2024-04-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-04-15,Transfer From,,,,GBP,63,2025-06-23 18:54:06.768,2025-06-23 18:54:06.768
+186,MTO,2024-04-17,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-04-15,Buy,,119.0000,,GBP,126,2025-06-23 18:54:06.769,2025-06-23 18:54:06.769
+187,MTO,2024-04-02,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2024-04-02,Buy,,106.6200,,GBP,2602,2025-06-23 18:54:06.771,2025-06-23 18:54:06.771
+188,MTO,2024-04-02,Mary Reilly held the position of Independent Non-Executive Director at the time of this trade.Mary Reilly,,2024-04-02,Buy,,106.6200,,GBP,1964,2025-06-23 18:54:06.772,2025-06-23 18:54:06.772
+189,MTO,2024-04-02,Derek Mapp held the position of Non-Executive Chairman at the time of this trade.Derek Mapp,,2024-04-02,Buy,,106.6200,,GBP,9153,2025-06-23 18:54:06.773,2025-06-23 18:54:06.773
+190,MTO,2024-03-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-03-13,Transfer From,,,,GBP,71,2025-06-23 18:54:06.774,2025-06-23 18:54:06.774
+191,MTO,2024-03-14,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-03-13,Buy,,106.3000,,GBP,141,2025-06-23 18:54:06.775,2025-06-23 18:54:06.775
+192,MTO,2024-02-05,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-02-02,Buy,,104.6800,,GBP,117994,2025-06-23 18:54:06.777,2025-06-23 18:54:06.777
+193,MTO,2024-02-05,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-02-01,Buy,,103.6000,,GBP,4708,2025-06-23 18:54:06.778,2025-06-23 18:54:06.778
+194,MTO,2024-02-05,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2024-01-31,Buy Dividends,,103.3900,,GBP,111,2025-06-23 18:54:06.779,2025-06-23 18:54:06.779
+195,MTO,2024-02-05,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-01-31,Buy Dividends,,103.3900,,GBP,72,2025-06-23 18:54:06.781,2025-06-23 18:54:06.781
+196,MTO,2024-01-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-01-15,Transfer From,,,,GBP,75,2025-06-23 18:54:06.782,2025-06-23 18:54:06.782
+197,MTO,2024-01-16,Phillip Bentley held the position of CEO at the time of this trade.Phillip Bentley,,2024-01-15,Buy,,10.0000,,GBP,150,2025-06-23 18:54:06.783,2025-06-23 18:54:06.783
+198,MTO,2024-01-02,Salma Shah held the position of Independent Non-Executive Director at the time of this trade.Salma Shah,,2024-01-02,Buy,,99.8000,,GBP,2780,2025-06-23 18:54:06.785,2025-06-23 18:54:06.785
+199,MTO,2024-01-02,Mary Reilly held the position of Independent Non-Executive Director at the time of this trade.Mary Reilly,,2024-01-02,Buy,,99.8000,,GBP,2098,2025-06-23 18:54:06.786,2025-06-23 18:54:06.786
+200,MTO,2024-01-02,Derek Mapp held the position of Non-Executive Chairman at the time of this trade.Derek Mapp,,2024-01-02,Buy,,99.8000,,GBP,9266,2025-06-23 18:54:06.787,2025-06-23 18:54:06.787
