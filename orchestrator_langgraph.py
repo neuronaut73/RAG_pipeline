@@ -228,9 +228,8 @@ class LangGraphOrchestrator:
         workflow.add_edge("rank_results", "synthesize_response")
         workflow.add_edge("synthesize_response", END)
         
-        # Compile the workflow
-        memory = MemorySaver()
-        compiled_workflow = workflow.compile(checkpointer=memory)
+        # Compile the workflow without checkpointing to avoid serialization issues
+        compiled_workflow = workflow.compile()
         
         return compiled_workflow
     
@@ -387,14 +386,17 @@ class LangGraphOrchestrator:
                 
                 for i, result in enumerate(results):
                     if isinstance(result, dict):
+                        # Clean all numpy types from the result
+                        clean_result = self._clean_numpy_types(result)
+                        
                         standardized_result = OrchestratorResult(
                             source=source,
-                            content=result,
-                            relevance_score=result.get("similarity_score", result.get("score", 0.5)),
-                            result_type=self._determine_result_type(result, source),
-                            ticker=result.get("ticker") or result.get("Ticker"),
-                            timestamp=result.get("timestamp") or result.get("Date") or result.get("created_at"),
-                            setup_id=result.get("setup_id")
+                            content=clean_result,
+                            relevance_score=float(clean_result.get("similarity_score", clean_result.get("score", 0.5))),
+                            result_type=self._determine_result_type(clean_result, source),
+                            ticker=clean_result.get("ticker") or clean_result.get("Ticker"),
+                            timestamp=clean_result.get("timestamp") or clean_result.get("Date") or clean_result.get("created_at"),
+                            setup_id=clean_result.get("setup_id")
                         )
                         standardized_results.append(standardized_result)
             
@@ -498,6 +500,9 @@ class LangGraphOrchestrator:
                 }
             }
             
+            # Clean all numpy types from the final response
+            final_response = self._clean_numpy_types(final_response)
+            
             execution_time = (datetime.now() - start_time).total_seconds()
             total_time = sum([
                 state.get("execution_metadata", {}).get("intent_analysis_time", 0),
@@ -526,6 +531,21 @@ class LangGraphOrchestrator:
             }
     
     # HELPER METHODS (adapted from original orchestrator)
+    
+    def _clean_numpy_types(self, obj):
+        """Recursively convert numpy types to Python types for serialization"""
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif hasattr(obj, 'item'):  # numpy scalar types
+            return obj.item()
+        elif isinstance(obj, dict):
+            return {key: self._clean_numpy_types(value) for key, value in obj.items()}
+        elif isinstance(obj, list):
+            return [self._clean_numpy_types(item) for item in obj]
+        elif isinstance(obj, tuple):
+            return tuple(self._clean_numpy_types(item) for item in obj)
+        else:
+            return obj
     
     def _determine_target_agents(self, query_type: QueryType, query_lower: str, context: Dict[str, Any]) -> List[str]:
         """Determine which agents to query based on intent and context"""
@@ -678,7 +698,11 @@ class LangGraphOrchestrator:
             
             # Update relevance scores and sort
             for i, result in enumerate(results):
-                result.relevance_score = float(scores[i])
+                # Ensure score is a Python float, not numpy type
+                score = scores[i]
+                if hasattr(score, 'item'):
+                    score = score.item()
+                result.relevance_score = float(score)
             
             return sorted(results, key=lambda x: x.relevance_score, reverse=True)
             
