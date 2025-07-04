@@ -185,7 +185,7 @@ def demo_userposts_agent():
     
     print("   🏆 Companies ranked by social sentiment:")
     for rank, (ticker, metrics) in enumerate(sorted_sentiment, 1):
-        print(f"   {rank}. {ticker}: {metrics['avg_sentiment']:.6.3f} sentiment | "
+        print(f"   {rank}. {ticker}: {metrics['avg_sentiment']:6.3f} sentiment | "
               f"{metrics['post_count']:2d} posts | {metrics['positive_percentage']:4.1f}% positive")
     
     # Section 6: Content Analysis & Trending Topics
