@@ -312,43 +312,41 @@ class LangGraphOrchestrator:
             
             agent_results = {}
             
-            # Execute queries on each target agent
+            # Execute queries on each target agent using dynamic method calling
             for agent_name in query_plan.target_agents:
-                agent_query = query_plan.agent_queries.get(agent_name, {})
-                if not agent_query:
+                if agent_name not in query_plan.agent_queries:
                     continue
-                
+                    
                 try:
-                    if agent_name == "fundamentals" and self.fundamentals_agent:
-                        results = self.fundamentals_agent.query(
-                            user_query=agent_query.get("query", state["user_query"]),
-                            ticker=agent_query.get("ticker"),
-                            limit=query_plan.max_results_per_agent
-                        )
-                        agent_results["fundamentals"] = results
+                    query_params = query_plan.agent_queries[agent_name].copy()
+                    method_name = query_params.pop('method')
+                    
+                    if agent_name == 'fundamentals' and self.fundamentals_agent:
+                        method = getattr(self.fundamentals_agent, method_name)
+                        results = method(**query_params)
+                        agent_results['fundamentals'] = results
+                        logger.info(f"📊 Fundamentals: {len(results) if results else 0} results")
                         
-                    elif agent_name == "news" and self.news_agent:
-                        results = self.news_agent.query(
-                            user_query=agent_query.get("query", state["user_query"]),
-                            ticker=agent_query.get("ticker"),
-                            start_date=agent_query.get("start_date"),
-                            end_date=agent_query.get("end_date"),
-                            limit=query_plan.max_results_per_agent
-                        )
-                        agent_results["news"] = results
+                    elif agent_name == 'news' and self.news_agent:
+                        method = getattr(self.news_agent, method_name)
+                        results = method(**query_params)
+                        agent_results['news'] = results
+                        logger.info(f"📰 News: {len(results) if results else 0} results")
                         
-                    elif agent_name == "userposts" and self.userposts_agent:
-                        results = self.userposts_agent.query(
-                            user_query=agent_query.get("query", state["user_query"]),
-                            ticker=agent_query.get("ticker"),
-                            sentiment_filter=agent_query.get("sentiment_filter"),
-                            limit=query_plan.max_results_per_agent
-                        )
-                        agent_results["userposts"] = results
+                    elif agent_name == 'userposts' and self.userposts_agent:
+                        method = getattr(self.userposts_agent, method_name)
+                        results = method(**query_params)
+                        
+                        # Convert DataFrame to list of dicts for consistency
+                        if isinstance(results, pd.DataFrame):
+                            results = results.to_dict('records')
+                        
+                        agent_results['userposts'] = results
+                        logger.info(f"💬 User posts: {len(results) if results else 0} results")
                         
                 except Exception as e:
-                    logger.warning(f"Agent {agent_name} query failed: {e}")
-                    agent_results[agent_name] = {"error": str(e), "results": []}
+                    logger.warning(f"⚠️  {agent_name} agent query failed: {e}")
+                    agent_results[agent_name] = []
             
             execution_time = (datetime.now() - start_time).total_seconds()
             
@@ -558,14 +556,7 @@ class LangGraphOrchestrator:
         """Create agent-specific queries based on intent and context"""
         agent_queries = {}
         
-        # Base query parameters
-        date_range = context.get("date_range") if context else None
-        base_params = {
-            "query": user_query,
-            "ticker": context.get("ticker") if context else None,
-            "start_date": date_range[0] if date_range else None,
-            "end_date": date_range[1] if date_range else None
-        }
+
         
         # Fundamentals agent query
         if self.fundamentals_agent:
@@ -598,17 +589,57 @@ class LangGraphOrchestrator:
         
         # News agent query
         if self.news_agent:
-            agent_queries["news"] = base_params.copy()
+            news_query = {'limit': 15}
+            ticker = self._extract_ticker(user_query, context)
+            setup_id = self._extract_setup_id(user_query, context)
+            
+            if setup_id:
+                news_query.update({
+                    'method': 'retrieve_by_setup_id',
+                    'setup_id': setup_id
+                })
+            elif ticker:
+                news_query.update({
+                    'method': 'retrieve_by_ticker',
+                    'ticker': ticker
+                })
+            else:
+                news_query.update({
+                    'method': 'retrieve_by_text_query',
+                    'query': user_query
+                })
+            
+            agent_queries["news"] = news_query
         
         # UserPosts agent query
         if self.userposts_agent:
-            userposts_query = base_params.copy()
-            # Add sentiment filter for sentiment-related queries
-            if query_type in [QueryType.USER_SENTIMENT, QueryType.MARKET_SENTIMENT]:
-                sentiment_match = re.search(r'\b(bullish|bearish|positive|negative)\b', user_query.lower())
-                if sentiment_match:
-                    userposts_query["sentiment_filter"] = sentiment_match.group(1)
-            agent_queries["userposts"] = userposts_query
+            posts_query = {'limit': 15}
+            ticker = self._extract_ticker(user_query, context)
+            setup_id = self._extract_setup_id(user_query, context)
+            date_range = self._extract_date_range(user_query, context)
+            
+            if setup_id:
+                posts_query.update({
+                    'method': 'retrieve_by_setup_id',
+                    'setup_id': setup_id
+                })
+            elif ticker:
+                posts_query.update({
+                    'method': 'retrieve_by_ticker',
+                    'ticker': ticker
+                })
+            else:
+                posts_query.update({
+                    'method': 'semantic_search',
+                    'query': user_query
+                })
+                
+            # Add date range if available
+            if date_range:
+                posts_query['start_date'] = date_range[0]
+                posts_query['end_date'] = date_range[1]
+            
+            agent_queries["userposts"] = posts_query
         
         return agent_queries
     
