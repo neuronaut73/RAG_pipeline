@@ -21,7 +21,7 @@ import logging
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 
 # Local imports
 from orchestrator_langgraph import LangGraphOrchestrator
@@ -471,7 +471,8 @@ class KnowledgeGraphExplainer:
             if top_results:
                 formatted_sections.append("TOP RESULTS:")
                 for i, result in enumerate(top_results[:10], 1):  # Limit to top 10
-                    formatted_sections.append(f"{i}. {result.get('content', '')[:200]}...")
+                    content = str(result.get('content', ''))
+                    formatted_sections.append(f"{i}. {content[:200]}...")
                     if result.get('metadata'):
                         meta = result['metadata']
                         formatted_sections.append(f"   - Source: {meta.get('source', 'unknown')}")
