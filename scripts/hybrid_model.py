@@ -131,7 +131,7 @@ class KnowledgeGraphClassifier:
 class HybridEnsembleModel:
     """Hybrid ensemble combining Knowledge Graph reasoning with ML models"""
     
-    def __init__(self, data_dir="data"):
+    def __init__(self, data_dir="../data"):
         self.data_dir = Path(data_dir)
         self.ml_pipeline = MLPipeline(data_dir=data_dir)
         self.kg_classifier = KnowledgeGraphClassifier()

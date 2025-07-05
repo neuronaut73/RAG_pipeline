@@ -33,7 +33,7 @@ warnings.filterwarnings("ignore")
 class MLPipeline:
     """ML Pipeline for Stock Outperformance Prediction"""
     
-    def __init__(self, data_dir="data"):
+    def __init__(self, data_dir="../data"):
         self.data_dir = Path(data_dir)
         self.models = {}
         self.performance = {}

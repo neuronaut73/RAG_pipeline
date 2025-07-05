@@ -25,7 +25,7 @@ class SetupValidatorDuckDB:
     and provides date validation for historical data filtering.
     """
     
-    def __init__(self, db_path: str = "data/sentiment_system.duckdb"):
+    def __init__(self, db_path: str = "../data/sentiment_system.duckdb"):
         """
         Initialize the setup validator
         

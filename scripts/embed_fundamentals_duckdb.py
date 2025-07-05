@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 class FundamentalsEmbedderDuckDB:
     """DuckDB-based Fundamentals Domain Embedding Pipeline"""
     
-    def __init__(self, db_path="data/sentiment_system.duckdb", lancedb_dir="lancedb_store", 
+    def __init__(self, db_path="../data/sentiment_system.duckdb", lancedb_dir="../lancedb_store", 
                  embedding_model="all-MiniLM-L6-v2"):
         self.db_path = Path(db_path)
         self.lancedb_dir = Path(lancedb_dir)

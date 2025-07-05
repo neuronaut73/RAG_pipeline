@@ -1,0 +1,701 @@
+2025-07-05 02:25:38,444 - __main__ - INFO - 🚀 STARTING COMPLETE RAG SYSTEM
+2025-07-05 02:25:38,444 - __main__ - INFO - ============================================================
+2025-07-05 02:25:38,444 - __main__ - INFO - Start Time: 2025-07-05 02:25:38
+2025-07-05 02:25:38,444 - __main__ - INFO - ============================================================
+2025-07-05 02:25:38,444 - __main__ - INFO - 🔧 PHASE 1: DATA PREPARATION
+2025-07-05 02:25:38,444 - __main__ - INFO - ==================================================
+2025-07-05 02:25:38,790 - numexpr.utils - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2025-07-05 02:25:38,793 - numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+2025-07-05 02:25:39,257 - __main__ - WARNING - ❌ Missing embeddings: ['fundamentals_embeddings', 'userposts_embeddings']
+2025-07-05 02:25:46,026 - run_complete_pipeline_duckdb - INFO - 🚀 STARTING COMPLETE RAG PIPELINE EXECUTION
+2025-07-05 02:25:46,026 - run_complete_pipeline_duckdb - INFO - Database: ..\data\sentiment_system.duckdb
+2025-07-05 02:25:46,026 - run_complete_pipeline_duckdb - INFO - LanceDB: ..\lancedb_store
+2025-07-05 02:25:46,026 - run_complete_pipeline_duckdb - INFO - Validating environment...
+2025-07-05 02:25:46,054 - setup_validator_duckdb - INFO - Loaded 72 confirmed setups from DuckDB
+2025-07-05 02:25:46,058 - setup_validator_duckdb - INFO - Confirmed setup IDs: 72
+2025-07-05 02:25:46,058 - setup_validator_duckdb - INFO - Setup dates parsed: 72
+2025-07-05 02:25:46,059 - setup_validator_duckdb - INFO - Sample setups: ['AML_2024-06-06', 'AML_2024-06-21', 'AML_2024-09-30', 'AML_2024-10-01', 'AML_2024-10-02']
+2025-07-05 02:25:46,061 - run_complete_pipeline_duckdb - INFO - ✓ DuckDB connection successful
+2025-07-05 02:25:46,061 - run_complete_pipeline_duckdb - INFO - ✓ Found 72 confirmed setups
+2025-07-05 02:25:46,061 - run_complete_pipeline_duckdb - INFO - ✓ Data counts: {'labels': 179, 'fundamentals': 109, 'user_posts': 1233, 'rns_announcements': 554, 'stock_news_enhanced': 25}
+2025-07-05 02:25:46,061 - run_complete_pipeline_duckdb - INFO - ✓ LanceDB directory ready: ..\lancedb_store
+2025-07-05 02:25:46,069 - run_complete_pipeline_duckdb - INFO - 
+⏳ Starting fundamentals pipeline...
+2025-07-05 02:25:46,069 - run_complete_pipeline_duckdb - INFO - ============================================================
+2025-07-05 02:25:46,069 - run_complete_pipeline_duckdb - INFO - STARTING FUNDAMENTALS EMBEDDING PIPELINE
+2025-07-05 02:25:46,069 - run_complete_pipeline_duckdb - INFO - ============================================================
+2025-07-05 02:25:46,089 - setup_validator_duckdb - INFO - Loaded 72 confirmed setups from DuckDB
+2025-07-05 02:25:46,091 - setup_validator_duckdb - INFO - Confirmed setup IDs: 72
+2025-07-05 02:25:46,091 - setup_validator_duckdb - INFO - Setup dates parsed: 72
+2025-07-05 02:25:46,091 - setup_validator_duckdb - INFO - Sample setups: ['AML_2024-06-06', 'AML_2024-06-21', 'AML_2024-09-30', 'AML_2024-10-01', 'AML_2024-10-02']
+2025-07-05 02:25:46,091 - embed_fundamentals_duckdb - INFO - Setup validator initialized with 72 confirmed setups
+2025-07-05 02:25:46,093 - embed_fundamentals_duckdb - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:25:46,096 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:25:46,097 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:25:49,586 - embed_fundamentals_duckdb - INFO - Starting DuckDB-based Fundamentals Domain Embedding Pipeline
+2025-07-05 02:25:49,586 - embed_fundamentals_duckdb - INFO - Loading financial data from DuckDB...
+2025-07-05 02:25:49,601 - setup_validator_duckdb - INFO - Retrieved 53 labels for confirmed setups
+2025-07-05 02:25:49,601 - embed_fundamentals_duckdb - INFO - Loaded 53 confirmed setup labels
+2025-07-05 02:25:49,744 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for HWDN_2024-07-09
+2025-07-05 02:25:49,760 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for HWDN_2024-07-09
+2025-07-05 02:25:49,771 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for MSLH_2024-10-31
+2025-07-05 02:25:49,771 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for MSLH_2024-10-31
+2025-07-05 02:25:49,781 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-10-08
+2025-07-05 02:25:49,786 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-10-08
+2025-07-05 02:25:49,787 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for AML_2024-06-21
+2025-07-05 02:25:49,798 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for AML_2024-06-21
+2025-07-05 02:25:49,803 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for WTB_2024-08-08
+2025-07-05 02:25:49,814 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for WTB_2024-08-08
+2025-07-05 02:25:49,821 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for WTB_2024-12-20
+2025-07-05 02:25:49,826 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for WTB_2024-12-20
+2025-07-05 02:25:49,836 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for HWDN_2024-08-16
+2025-07-05 02:25:49,844 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for HWDN_2024-08-16
+2025-07-05 02:25:49,851 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for JDW_2024-07-26
+2025-07-05 02:25:49,859 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for JDW_2024-07-26
+2025-07-05 02:25:49,864 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for AML_2024-06-06
+2025-07-05 02:25:49,873 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for AML_2024-06-06
+2025-07-05 02:25:49,881 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2025-03-03
+2025-07-05 02:25:49,887 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2025-03-03
+2025-07-05 02:25:49,895 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2024-10-16
+2025-07-05 02:25:49,903 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2024-10-16
+2025-07-05 02:25:49,903 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for KZG_2024-06-11
+2025-07-05 02:25:49,916 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for KZG_2024-06-11
+2025-07-05 02:25:49,921 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-07-12
+2025-07-05 02:25:49,925 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-07-12
+2025-07-05 02:25:49,928 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2024-09-30
+2025-07-05 02:25:49,931 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2024-09-30
+2025-07-05 02:25:49,935 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2024-09-19
+2025-07-05 02:25:49,939 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2024-09-19
+2025-07-05 02:25:49,941 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-07-10
+2025-07-05 02:25:49,946 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-07-10
+2025-07-05 02:25:49,952 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for WTB_2025-01-06
+2025-07-05 02:25:49,959 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for WTB_2025-01-06
+2025-07-05 02:25:49,959 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for DGE_2024-09-12
+2025-07-05 02:25:49,973 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for DGE_2024-09-12
+2025-07-05 02:25:49,978 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2024-11-05
+2025-07-05 02:25:49,981 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2024-11-05
+2025-07-05 02:25:49,988 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for HWDN_2024-08-12
+2025-07-05 02:25:49,989 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for HWDN_2024-08-12
+2025-07-05 02:25:50,003 - setup_validator_duckdb - INFO - Retrieved 7 historical fundamentals for AML_2025-02-03
+2025-07-05 02:25:50,011 - setup_validator_duckdb - INFO - Retrieved 7 financial ratios for AML_2025-02-03
+2025-07-05 02:25:50,018 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for HWDN_2025-04-07
+2025-07-05 02:25:50,024 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for HWDN_2025-04-07
+2025-07-05 02:25:50,024 - setup_validator_duckdb - INFO - Retrieved 7 historical fundamentals for AML_2025-02-26
+2025-07-05 02:25:50,042 - setup_validator_duckdb - INFO - Retrieved 7 financial ratios for AML_2025-02-26
+2025-07-05 02:25:50,045 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2025-01-07
+2025-07-05 02:25:50,049 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2025-01-07
+2025-07-05 02:25:50,054 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for MSLH_2024-10-16
+2025-07-05 02:25:50,054 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for MSLH_2024-10-16
+2025-07-05 02:25:50,071 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for MSLH_2025-01-21
+2025-07-05 02:25:50,076 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for MSLH_2025-01-21
+2025-07-05 02:25:50,085 - setup_validator_duckdb - INFO - Retrieved 6 historical fundamentals for AML_2024-10-01
+2025-07-05 02:25:50,087 - setup_validator_duckdb - INFO - Retrieved 6 financial ratios for AML_2024-10-01
+2025-07-05 02:25:50,100 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2025-02-28
+2025-07-05 02:25:50,103 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2025-02-28
+2025-07-05 02:25:50,114 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for JDW_2024-07-01
+2025-07-05 02:25:50,122 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for JDW_2024-07-01
+2025-07-05 02:25:50,125 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2025-01-28
+2025-07-05 02:25:50,137 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2025-01-28
+2025-07-05 02:25:50,137 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for WTB_2024-07-09
+2025-07-05 02:25:50,153 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for WTB_2024-07-09
+2025-07-05 02:25:50,155 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for WTB_2025-04-23
+2025-07-05 02:25:50,167 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for WTB_2025-04-23
+2025-07-05 02:25:50,175 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for WTB_2024-11-12
+2025-07-05 02:25:50,175 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for WTB_2024-11-12
+2025-07-05 02:25:50,191 - setup_validator_duckdb - INFO - Retrieved 6 historical fundamentals for AML_2024-10-02
+2025-07-05 02:25:50,201 - setup_validator_duckdb - INFO - Retrieved 6 financial ratios for AML_2024-10-02
+2025-07-05 02:25:50,204 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2025-03-21
+2025-07-05 02:25:50,208 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2025-03-21
+2025-07-05 02:25:50,215 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2024-10-17
+2025-07-05 02:25:50,222 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2024-10-17
+2025-07-05 02:25:50,222 - setup_validator_duckdb - INFO - Retrieved 6 historical fundamentals for AML_2024-09-30
+2025-07-05 02:25:50,237 - setup_validator_duckdb - INFO - Retrieved 6 financial ratios for AML_2024-09-30
+2025-07-05 02:25:50,237 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2024-10-28
+2025-07-05 02:25:50,245 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2024-10-28
+2025-07-05 02:25:50,247 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for MSLH_2024-07-03
+2025-07-05 02:25:50,258 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for MSLH_2024-07-03
+2025-07-05 02:25:50,265 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for WTB_2024-12-17
+2025-07-05 02:25:50,272 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for WTB_2024-12-17
+2025-07-05 02:25:50,280 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2024-11-08
+2025-07-05 02:25:50,288 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2024-11-08
+2025-07-05 02:25:50,292 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-11-22
+2025-07-05 02:25:50,294 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-11-22
+2025-07-05 02:25:50,305 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2025-04-01
+2025-07-05 02:25:50,310 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2025-04-01
+2025-07-05 02:25:50,317 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-09-03
+2025-07-05 02:25:50,321 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-09-03
+2025-07-05 02:25:50,321 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for DGE_2025-02-28
+2025-07-05 02:25:50,333 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for DGE_2025-02-28
+2025-07-05 02:25:50,338 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-07-18
+2025-07-05 02:25:50,341 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-07-18
+2025-07-05 02:25:50,348 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for DGE_2024-12-05
+2025-07-05 02:25:50,355 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for DGE_2024-12-05
+2025-07-05 02:25:50,355 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for MSLH_2025-01-15
+2025-07-05 02:25:50,371 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for MSLH_2025-01-15
+2025-07-05 02:25:50,377 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2024-07-15
+2025-07-05 02:25:50,386 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2024-07-15
+2025-07-05 02:25:50,389 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BLND_2025-04-22
+2025-07-05 02:25:50,394 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BLND_2025-04-22
+2025-07-05 02:25:50,397 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2024-12-16
+2025-07-05 02:25:50,407 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2024-12-16
+2025-07-05 02:25:50,414 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2024-11-08
+2025-07-05 02:25:50,423 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2024-11-08
+2025-07-05 02:25:50,429 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2024-11-25
+2025-07-05 02:25:50,438 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2024-11-25
+2025-07-05 02:25:50,441 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for BGO_2024-07-15
+2025-07-05 02:25:50,445 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for BGO_2024-07-15
+2025-07-05 02:25:50,452 - setup_validator_duckdb - INFO - Retrieved 7 historical fundamentals for AML_2025-02-27
+2025-07-05 02:25:50,457 - setup_validator_duckdb - INFO - Retrieved 7 financial ratios for AML_2025-02-27
+2025-07-05 02:25:50,466 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for DGE_2024-09-24
+2025-07-05 02:25:50,473 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for DGE_2024-09-24
+2025-07-05 02:25:50,481 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2025-05-07
+2025-07-05 02:25:50,490 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2025-05-07
+2025-07-05 02:25:50,493 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for DGE_2024-09-20
+2025-07-05 02:25:50,504 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for DGE_2024-09-20
+2025-07-05 02:25:50,504 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for HWDN_2025-01-15
+2025-07-05 02:25:50,518 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for HWDN_2025-01-15
+2025-07-05 02:25:50,525 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for MSLH_2025-01-16
+2025-07-05 02:25:50,530 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for MSLH_2025-01-16
+2025-07-05 02:25:50,539 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for MSLH_2024-11-06
+2025-07-05 02:25:50,547 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for MSLH_2024-11-06
+2025-07-05 02:25:50,552 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2024-11-21
+2025-07-05 02:25:50,561 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2024-11-21
+2025-07-05 02:25:50,567 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for SSPG_2025-01-09
+2025-07-05 02:25:50,571 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for SSPG_2025-01-09
+2025-07-05 02:25:50,581 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for WTB_2025-04-24
+2025-07-05 02:25:50,589 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for WTB_2025-04-24
+2025-07-05 02:25:50,592 - setup_validator_duckdb - INFO - Retrieved 4 historical fundamentals for HWDN_2024-07-23
+2025-07-05 02:25:50,604 - setup_validator_duckdb - INFO - Retrieved 4 financial ratios for HWDN_2024-07-23
+2025-07-05 02:25:50,608 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for DGE_2024-07-30
+2025-07-05 02:25:50,618 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for DGE_2024-07-30
+2025-07-05 02:25:50,622 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2024-08-14
+2025-07-05 02:25:50,626 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2024-08-14
+2025-07-05 02:25:50,632 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for HWDN_2025-02-27
+2025-07-05 02:25:50,638 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for HWDN_2025-02-27
+2025-07-05 02:25:50,644 - setup_validator_duckdb - INFO - Retrieved 3 historical fundamentals for BLND_2025-03-19
+2025-07-05 02:25:50,647 - setup_validator_duckdb - INFO - Retrieved 3 financial ratios for BLND_2025-03-19
+2025-07-05 02:25:50,654 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for HWDN_2025-03-05
+2025-07-05 02:25:50,655 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for HWDN_2025-03-05
+2025-07-05 02:25:50,668 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for KZG_2024-12-13
+2025-07-05 02:25:50,675 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for KZG_2024-12-13
+2025-07-05 02:25:50,683 - setup_validator_duckdb - INFO - Retrieved 5 historical fundamentals for MSLH_2025-01-09
+2025-07-05 02:25:50,687 - setup_validator_duckdb - INFO - Retrieved 5 financial ratios for MSLH_2025-01-09
+2025-07-05 02:25:50,702 - embed_fundamentals_duckdb - INFO - Loaded 329 fundamentals records
+2025-07-05 02:25:50,710 - embed_fundamentals_duckdb - INFO - Loaded 329 ratios records
+2025-07-05 02:25:50,719 - embed_fundamentals_duckdb - INFO - Merged data contains 329 records
+2025-07-05 02:25:50,900 - embed_fundamentals_duckdb - INFO - Created 329 fundamentals records for confirmed setups
+2025-07-05 02:25:50,901 - embed_fundamentals_duckdb - INFO - Generating embeddings for 329 financial summaries
+2025-07-05 02:25:52,926 - embed_fundamentals_duckdb - INFO - Embeddings created successfully
+2025-07-05 02:25:52,926 - embed_fundamentals_duckdb - INFO - Storing 329 records in LanceDB table: fundamentals_embeddings
+2025-07-05 02:25:52,956 - embed_fundamentals_duckdb - INFO - Successfully created table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:25:52,971 - embed_fundamentals_duckdb - INFO - Pipeline Summary:
+2025-07-05 02:25:52,972 - embed_fundamentals_duckdb - INFO -   Total records: 329
+2025-07-05 02:25:52,972 - embed_fundamentals_duckdb - INFO -   With performance labels: 236
+2025-07-05 02:25:52,972 - embed_fundamentals_duckdb - INFO -   Unique setups: 72
+2025-07-05 02:25:52,977 - run_complete_pipeline_duckdb - INFO - ✅ Fundamentals pipeline completed successfully in 6.9 seconds
+2025-07-05 02:25:52,977 - run_complete_pipeline_duckdb - INFO - 
+⏳ Starting news pipeline...
+2025-07-05 02:25:52,977 - run_complete_pipeline_duckdb - INFO - ============================================================
+2025-07-05 02:25:52,981 - run_complete_pipeline_duckdb - INFO - STARTING NEWS EMBEDDING PIPELINE
+2025-07-05 02:25:52,981 - run_complete_pipeline_duckdb - INFO - ============================================================
+2025-07-05 02:25:52,983 - run_complete_pipeline_duckdb - WARNING - News embedding pipeline not available - skipping
+2025-07-05 02:25:52,983 - run_complete_pipeline_duckdb - INFO - 
+⏳ Starting userposts pipeline...
+2025-07-05 02:25:52,983 - run_complete_pipeline_duckdb - INFO - ============================================================
+2025-07-05 02:25:52,983 - run_complete_pipeline_duckdb - INFO - STARTING USER POSTS EMBEDDING PIPELINE
+2025-07-05 02:25:52,983 - run_complete_pipeline_duckdb - INFO - ============================================================
+2025-07-05 02:25:53,002 - setup_validator_duckdb - INFO - Loaded 72 confirmed setups from DuckDB
+2025-07-05 02:25:53,006 - setup_validator_duckdb - INFO - Confirmed setup IDs: 72
+2025-07-05 02:25:53,007 - setup_validator_duckdb - INFO - Setup dates parsed: 72
+2025-07-05 02:25:53,007 - setup_validator_duckdb - INFO - Sample setups: ['AML_2024-06-06', 'AML_2024-06-21', 'AML_2024-09-30', 'AML_2024-10-01', 'AML_2024-10-02']
+2025-07-05 02:25:53,007 - embed_userposts_duckdb - INFO - Setup validator initialized with 72 confirmed setups
+2025-07-05 02:25:53,007 - embed_userposts_duckdb - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:25:53,012 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:25:53,012 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:25:54,558 - embed_userposts_duckdb - INFO - Starting DuckDB-based User Posts Domain Embedding Pipeline
+2025-07-05 02:25:54,558 - embed_userposts_duckdb - INFO - Loading user posts data from DuckDB...
+2025-07-05 02:25:54,563 - setup_validator_duckdb - INFO - Retrieved 785 user posts for confirmed setups
+2025-07-05 02:25:54,563 - embed_userposts_duckdb - INFO - Loaded 785 user posts
+2025-07-05 02:25:54,566 - setup_validator_duckdb - INFO - Retrieved 53 labels for confirmed setups
+2025-07-05 02:25:54,567 - embed_userposts_duckdb - INFO - Loaded 53 confirmed setup labels
+2025-07-05 02:25:54,578 - embed_userposts_duckdb - INFO - Filtered out 0 empty posts, 785 remaining
+2025-07-05 02:25:54,594 - embed_userposts_duckdb - INFO - Processed data: 785 posts, 785 with performance labels
+2025-07-05 02:25:54,594 - embed_userposts_duckdb - INFO - Creating embeddings dataset...
+2025-07-05 02:25:55,117 - embed_userposts_duckdb - INFO - Processed 50 chunks...
+2025-07-05 02:25:55,631 - embed_userposts_duckdb - INFO - Processed 100 chunks...
+2025-07-05 02:25:56,092 - embed_userposts_duckdb - INFO - Processed 150 chunks...
+2025-07-05 02:25:56,521 - embed_userposts_duckdb - INFO - Processed 200 chunks...
+2025-07-05 02:25:56,994 - embed_userposts_duckdb - INFO - Processed 250 chunks...
+2025-07-05 02:25:57,477 - embed_userposts_duckdb - INFO - Processed 300 chunks...
+2025-07-05 02:25:57,961 - embed_userposts_duckdb - INFO - Processed 350 chunks...
+2025-07-05 02:25:58,502 - embed_userposts_duckdb - INFO - Processed 400 chunks...
+2025-07-05 02:25:58,995 - embed_userposts_duckdb - INFO - Processed 450 chunks...
+2025-07-05 02:25:59,529 - embed_userposts_duckdb - INFO - Processed 500 chunks...
+2025-07-05 02:26:00,038 - embed_userposts_duckdb - INFO - Processed 550 chunks...
+2025-07-05 02:26:00,549 - embed_userposts_duckdb - INFO - Processed 600 chunks...
+2025-07-05 02:26:01,082 - embed_userposts_duckdb - INFO - Processed 650 chunks...
+2025-07-05 02:26:01,601 - embed_userposts_duckdb - INFO - Processed 700 chunks...
+2025-07-05 02:26:02,085 - embed_userposts_duckdb - INFO - Processed 750 chunks...
+2025-07-05 02:26:02,469 - embed_userposts_duckdb - INFO - Created embeddings for 790 chunks from 785 posts
+2025-07-05 02:26:02,469 - embed_userposts_duckdb - INFO - Storing 790 records in LanceDB
+2025-07-05 02:26:02,473 - embed_userposts_duckdb - INFO - Dropped existing table: userposts_embeddings
+2025-07-05 02:26:02,514 - embed_userposts_duckdb - INFO - Created LanceDB table 'userposts_embeddings' with 790 records
+2025-07-05 02:26:02,514 - embed_userposts_duckdb - INFO - Table verification: Retrieved 3 sample records
+2025-07-05 02:26:02,532 - embed_userposts_duckdb - INFO - Pipeline Summary:
+2025-07-05 02:26:02,532 - embed_userposts_duckdb - INFO -   total_chunks: 790
+2025-07-05 02:26:02,532 - embed_userposts_duckdb - INFO -   unique_posts: 785
+2025-07-05 02:26:02,532 - embed_userposts_duckdb - INFO -   unique_setups: 17
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   unique_tickers: 6
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   unique_users: 65
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   avg_chunk_length: 227.67974683544304
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   avg_sentiment_score: 0.25829415310427967
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   posts_with_labels: 790
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   avg_stock_return: -1.7795167869027657
+2025-07-05 02:26:02,533 - embed_userposts_duckdb - INFO -   avg_outperformance: -2.291019856703432
+2025-07-05 02:26:02,539 - run_complete_pipeline_duckdb - INFO - ✅ User posts pipeline completed successfully in 9.6 seconds
+2025-07-05 02:26:02,539 - run_complete_pipeline_duckdb - INFO - 
+================================================================================
+2025-07-05 02:26:02,539 - run_complete_pipeline_duckdb - INFO - COMPLETE RAG PIPELINE EXECUTION SUMMARY
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO - ================================================================================
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO - Total execution time: 16.5 seconds (0.3 minutes)
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO - 
+📊 FUNDAMENTALS PIPELINE:
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO -    Status: success
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO -    Duration: 6.9 seconds
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO -    ✅ Completed successfully
+2025-07-05 02:26:02,544 - run_complete_pipeline_duckdb - INFO - 
+📊 NEWS PIPELINE:
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO -    Status: skipped
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO -    Duration: 0.0 seconds
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO -    ⏭️  Skipped: Module not found
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO - 
+📊 USERPOSTS PIPELINE:
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO -    Status: success
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO -    Duration: 9.6 seconds
+2025-07-05 02:26:02,545 - run_complete_pipeline_duckdb - INFO -    ✅ Completed successfully
+2025-07-05 02:26:02,546 - run_complete_pipeline_duckdb - INFO - 
+🎯 OVERALL RESULTS:
+2025-07-05 02:26:02,546 - run_complete_pipeline_duckdb - INFO -    ✅ Successful: 2
+2025-07-05 02:26:02,546 - run_complete_pipeline_duckdb - INFO -    ❌ Failed: 0
+2025-07-05 02:26:02,546 - run_complete_pipeline_duckdb - INFO -    ⏭️  Skipped: 1
+2025-07-05 02:26:02,565 - setup_validator_duckdb - INFO - Loaded 72 confirmed setups from DuckDB
+2025-07-05 02:26:02,568 - setup_validator_duckdb - INFO - Confirmed setup IDs: 72
+2025-07-05 02:26:02,568 - setup_validator_duckdb - INFO - Setup dates parsed: 72
+2025-07-05 02:26:02,568 - setup_validator_duckdb - INFO - Sample setups: ['AML_2024-06-06', 'AML_2024-06-21', 'AML_2024-09-30', 'AML_2024-10-01', 'AML_2024-10-02']
+2025-07-05 02:26:02,571 - run_complete_pipeline_duckdb - INFO - 
+📈 DATA PROCESSING SUMMARY:
+2025-07-05 02:26:02,572 - run_complete_pipeline_duckdb - INFO -    Confirmed setups processed: 72
+2025-07-05 02:26:02,572 - run_complete_pipeline_duckdb - INFO -    Unique tickers: 10
+2025-07-05 02:26:02,572 - run_complete_pipeline_duckdb - INFO -    LanceDB tables created in: ..\lancedb_store
+2025-07-05 02:26:02,574 - run_complete_pipeline_duckdb - INFO - ================================================================================
+2025-07-05 02:26:02,574 - __main__ - INFO - 🎭 PHASE 2: RAG ORCHESTRATION
+2025-07-05 02:26:02,574 - __main__ - INFO - ==================================================
+2025-07-05 02:26:02,601 - __main__ - INFO - Running comprehensive demo orchestrator...
+2025-07-05 02:26:02,602 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:26:02,605 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:02,605 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:02,606 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:02,606 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:04,150 - orchestrator_agent - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:04,150 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:04,162 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:04,162 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:05,784 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:05,785 - orchestrator_agent - INFO - ✅ News agent initialized
+2025-07-05 02:26:05,785 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:05,788 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:05,788 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:07,485 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:07,485 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:07,485 - orchestrator_agent - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:08,590 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:26:08,835 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:26:08,835 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:26:08,848 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:26:08,850 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:08,851 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:08,854 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:08,855 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:10,388 - orchestrator_agent - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:10,388 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:10,388 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:10,388 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:11,938 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:11,954 - orchestrator_agent - INFO - ✅ News agent initialized
+2025-07-05 02:26:11,954 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:11,954 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:11,954 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:13,494 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:13,494 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:13,494 - orchestrator_agent - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:14,609 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:26:14,855 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:26:14,855 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:26:14,855 - orchestrator_agent - INFO - 🔍 Processing query: 'profitable companies with strong ROE and returns'
+2025-07-05 02:26:14,860 - orchestrator_agent - INFO - 📋 Query plan: financial_analysis, agents: ['fundamentals', 'news']
+2025-07-05 02:26:14,878 - agent_fundamentals - WARNING - No fundamentals records found for ticker: WITH
+2025-07-05 02:26:14,878 - orchestrator_agent - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:26:14,892 - agent_news - WARNING - No records found for ticker: WITH
+2025-07-05 02:26:14,892 - orchestrator_agent - INFO - 📰 News: 0 results
+2025-07-05 02:26:14,892 - orchestrator_agent - INFO - 📋 Standardized 0 results from 2 agents
+2025-07-05 02:26:14,893 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:14,893 - orchestrator_agent - INFO - ✅ Query completed in 0.04s, 0 total results
+2025-07-05 02:26:14,893 - orchestrator_agent - INFO - 🔍 Processing query: 'AML comprehensive analysis sentiment and performance'
+2025-07-05 02:26:14,894 - orchestrator_agent - INFO - 📋 Query plan: company_analysis, agents: ['fundamentals', 'news', 'userposts']
+2025-07-05 02:26:14,897 - agent_fundamentals - WARNING - No fundamentals records found for ticker: AML
+2025-07-05 02:26:14,897 - orchestrator_agent - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:26:14,902 - agent_news - WARNING - No records found for ticker: AML
+2025-07-05 02:26:14,902 - orchestrator_agent - INFO - 📰 News: 0 results
+2025-07-05 02:26:14,907 - agent_userposts - WARNING - No posts found for ticker: AML
+2025-07-05 02:26:14,912 - orchestrator_agent - INFO - 💬 User posts: 0 results
+2025-07-05 02:26:14,912 - orchestrator_agent - INFO - 📋 Standardized 0 results from 3 agents
+2025-07-05 02:26:14,912 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:14,912 - orchestrator_agent - INFO - ✅ Query completed in 0.02s, 0 total results
+2025-07-05 02:26:14,913 - orchestrator_agent - INFO - 🔍 Processing query: 'BGO comprehensive analysis sentiment and performance'
+2025-07-05 02:26:14,913 - orchestrator_agent - INFO - 📋 Query plan: company_analysis, agents: ['fundamentals', 'news', 'userposts']
+2025-07-05 02:26:14,914 - agent_fundamentals - WARNING - No fundamentals records found for ticker: BGO
+2025-07-05 02:26:14,914 - orchestrator_agent - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:26:14,921 - agent_news - WARNING - No records found for ticker: BGO
+2025-07-05 02:26:14,921 - orchestrator_agent - INFO - 📰 News: 0 results
+2025-07-05 02:26:14,925 - agent_userposts - WARNING - No posts found for ticker: BGO
+2025-07-05 02:26:14,927 - orchestrator_agent - INFO - 💬 User posts: 0 results
+2025-07-05 02:26:14,927 - orchestrator_agent - INFO - 📋 Standardized 0 results from 3 agents
+2025-07-05 02:26:14,927 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:14,927 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:14,928 - orchestrator_agent - INFO - 🔍 Processing query: 'HWDN comprehensive analysis sentiment and performance'
+2025-07-05 02:26:14,928 - orchestrator_agent - INFO - 📋 Query plan: company_analysis, agents: ['fundamentals', 'news', 'userposts']
+2025-07-05 02:26:14,931 - agent_fundamentals - WARNING - No fundamentals records found for ticker: HWDN
+2025-07-05 02:26:14,931 - orchestrator_agent - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:26:14,932 - agent_news - INFO - Retrieved 15 records for ticker: HWDN
+2025-07-05 02:26:14,932 - orchestrator_agent - INFO - 📰 News: 15 results
+2025-07-05 02:26:14,944 - agent_userposts - INFO - Retrieved 15 posts for ticker HWDN
+2025-07-05 02:26:14,945 - orchestrator_agent - INFO - 💬 User posts: 15 results
+2025-07-05 02:26:14,945 - orchestrator_agent - INFO - 📋 Standardized 30 results from 3 agents
+2025-07-05 02:26:15,184 - orchestrator_agent - INFO - 🎯 Applied cross-encoder re-ranking
+2025-07-05 02:26:15,184 - orchestrator_agent - INFO - ✅ Query completed in 0.26s, 30 total results
+2025-07-05 02:26:15,184 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:26:15,184 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:15,184 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:15,194 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:15,194 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:16,743 - orchestrator_agent - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:16,743 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:16,743 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:16,743 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:18,310 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:18,310 - orchestrator_agent - INFO - ✅ News agent initialized
+2025-07-05 02:26:18,310 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:18,310 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:18,310 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:20,075 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:20,075 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:20,075 - orchestrator_agent - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:21,183 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:26:21,428 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:26:21,428 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:26:21,428 - orchestrator_agent - INFO - 🔍 Processing query: 'BGO social sentiment analysis recent posts'
+2025-07-05 02:26:21,428 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:21,428 - agent_userposts - WARNING - No posts found for ticker: BGO
+2025-07-05 02:26:21,428 - orchestrator_agent - INFO - 💬 User posts: 0 results
+2025-07-05 02:26:21,428 - orchestrator_agent - INFO - 📋 Standardized 0 results from 1 agents
+2025-07-05 02:26:21,438 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:21,438 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:21,438 - orchestrator_agent - INFO - 🔍 Processing query: 'AML social sentiment analysis recent posts'
+2025-07-05 02:26:21,438 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:21,443 - agent_userposts - WARNING - No posts found for ticker: AML
+2025-07-05 02:26:21,444 - orchestrator_agent - INFO - 💬 User posts: 0 results
+2025-07-05 02:26:21,444 - orchestrator_agent - INFO - 📋 Standardized 0 results from 1 agents
+2025-07-05 02:26:21,444 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:21,444 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:21,444 - orchestrator_agent - INFO - 🔍 Processing query: 'HWDN social sentiment analysis recent posts'
+2025-07-05 02:26:21,445 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:21,456 - agent_userposts - INFO - Retrieved 0 posts for ticker HWDN
+2025-07-05 02:26:21,457 - orchestrator_agent - INFO - 💬 User posts: 0 results
+2025-07-05 02:26:21,457 - orchestrator_agent - INFO - 📋 Standardized 0 results from 1 agents
+2025-07-05 02:26:21,457 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:21,458 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:21,459 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:26:21,461 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:21,462 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:21,465 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:21,465 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:23,046 - orchestrator_agent - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:23,046 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:23,061 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:23,061 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:24,600 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:24,600 - orchestrator_agent - INFO - ✅ News agent initialized
+2025-07-05 02:26:24,600 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:24,600 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:24,600 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:26,199 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:26,199 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:26,199 - orchestrator_agent - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:27,305 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:26:27,552 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:26:27,552 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:26:27,552 - orchestrator_agent - INFO - 🔍 Processing query: 'recent earnings announcements financial results news'
+2025-07-05 02:26:27,552 - orchestrator_agent - INFO - 📋 Query plan: financial_analysis, agents: ['fundamentals', 'news']
+2025-07-05 02:26:27,566 - agent_fundamentals - WARNING - No fundamentals records found for ticker: NEWS
+2025-07-05 02:26:27,566 - orchestrator_agent - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:26:27,574 - agent_news - WARNING - No records found for ticker: NEWS
+2025-07-05 02:26:27,574 - orchestrator_agent - INFO - 📰 News: 0 results
+2025-07-05 02:26:27,574 - orchestrator_agent - INFO - 📋 Standardized 0 results from 2 agents
+2025-07-05 02:26:27,574 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:27,574 - orchestrator_agent - INFO - ✅ Query completed in 0.02s, 0 total results
+2025-07-05 02:26:27,574 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:26:27,574 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:27,574 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:27,574 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:27,574 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:29,151 - orchestrator_agent - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:29,151 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:29,151 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:29,151 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:30,705 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:30,705 - orchestrator_agent - INFO - ✅ News agent initialized
+2025-07-05 02:26:30,705 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:30,705 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:30,705 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:32,255 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:32,255 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:32,255 - orchestrator_agent - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:33,354 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:26:33,608 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:26:33,609 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:26:33,609 - orchestrator_agent - INFO - 🔍 Processing query: 'compare AML vs BGO financial performance sentiment and news coverage'
+2025-07-05 02:26:33,609 - orchestrator_agent - INFO - 📋 Query plan: financial_analysis, agents: ['fundamentals', 'news']
+2025-07-05 02:26:33,612 - agent_fundamentals - WARNING - No fundamentals records found for ticker: BGO
+2025-07-05 02:26:33,612 - orchestrator_agent - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:26:33,620 - agent_news - WARNING - No records found for ticker: BGO
+2025-07-05 02:26:33,620 - orchestrator_agent - INFO - 📰 News: 0 results
+2025-07-05 02:26:33,620 - orchestrator_agent - INFO - 📋 Standardized 0 results from 2 agents
+2025-07-05 02:26:33,621 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:33,621 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:33,621 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:26:33,624 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:33,624 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:33,626 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:33,626 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:35,168 - orchestrator_agent - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:35,168 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:35,172 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:35,172 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:36,890 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:36,890 - orchestrator_agent - INFO - ✅ News agent initialized
+2025-07-05 02:26:36,890 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:36,890 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:36,890 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:38,426 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:38,426 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:38,426 - orchestrator_agent - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:39,523 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:26:39,780 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:26:39,780 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:26:39,780 - orchestrator_agent - INFO - 🔍 Processing query: 'bullish investment opportunities strong growth potential'
+2025-07-05 02:26:39,780 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:39,812 - agent_userposts - INFO - Semantic search for 'bullish investment opportunities strong growth potential': 15 results
+2025-07-05 02:26:39,813 - orchestrator_agent - INFO - 💬 User posts: 15 results
+2025-07-05 02:26:39,813 - orchestrator_agent - INFO - 📋 Standardized 15 results from 1 agents
+2025-07-05 02:26:39,813 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:39,817 - orchestrator_agent - INFO - ✅ Query completed in 0.04s, 15 total results
+2025-07-05 02:26:39,817 - orchestrator_agent - INFO - 🔍 Processing query: 'bullish investment opportunities strong growth potential'
+2025-07-05 02:26:39,817 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:39,835 - agent_userposts - INFO - Semantic search for 'bullish investment opportunities strong growth potential': 15 results
+2025-07-05 02:26:39,837 - orchestrator_agent - INFO - 💬 User posts: 15 results
+2025-07-05 02:26:39,837 - orchestrator_agent - INFO - 📋 Standardized 15 results from 1 agents
+2025-07-05 02:26:39,945 - orchestrator_agent - INFO - 🎯 Applied cross-encoder re-ranking
+2025-07-05 02:26:39,945 - orchestrator_agent - INFO - ✅ Query completed in 0.13s, 15 total results
+2025-07-05 02:26:39,945 - orchestrator_agent - INFO - 🔍 Processing query: 'recent sentiment analysis'
+2025-07-05 02:26:39,955 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:39,955 - orchestrator_agent - WARNING - ⚠️  userposts agent query failed: UserPostsAgent.semantic_search() got an unexpected keyword argument 'start_date'
+2025-07-05 02:26:39,955 - orchestrator_agent - INFO - 📋 Standardized 0 results from 1 agents
+2025-07-05 02:26:39,955 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:39,956 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:39,956 - orchestrator_agent - INFO - 🔍 Processing query: 'recent sentiment analysis'
+2025-07-05 02:26:39,956 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: ['userposts']
+2025-07-05 02:26:39,963 - agent_userposts - WARNING - No posts found for ticker: BGO
+2025-07-05 02:26:39,965 - orchestrator_agent - INFO - 💬 User posts: 0 results
+2025-07-05 02:26:39,965 - orchestrator_agent - INFO - 📋 Standardized 0 results from 1 agents
+2025-07-05 02:26:39,965 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:26:39,965 - orchestrator_agent - INFO - ✅ Query completed in 0.01s, 0 total results
+2025-07-05 02:26:39,966 - __main__ - INFO - ✅ Demo orchestration completed
+2025-07-05 02:26:39,967 - __main__ - INFO - 🧠 PHASE 3: ML MODEL SCORING
+2025-07-05 02:26:39,967 - __main__ - INFO - ==================================================
+2025-07-05 02:26:42,052 - __main__ - INFO - Initializing Hybrid Ensemble Model...
+2025-07-05 02:26:42,052 - orchestrator_langgraph - INFO - Initializing domain agents...
+2025-07-05 02:26:42,068 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:26:42,068 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:42,068 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:42,068 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:43,602 - orchestrator_langgraph - INFO - ✅ Fundamentals agent initialized
+2025-07-05 02:26:43,602 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:43,602 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:43,602 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:45,154 - agent_news - INFO - Connected to table 'news_embeddings' with 266 records
+2025-07-05 02:26:45,154 - orchestrator_langgraph - INFO - ✅ News agent initialized
+2025-07-05 02:26:45,154 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:26:45,154 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:26:45,154 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:26:46,786 - agent_userposts - INFO - Connected to userposts_embeddings: 790 posts, 6 companies, 65 users
+2025-07-05 02:26:46,786 - agent_userposts - INFO - UserPostsAgent initialized successfully
+2025-07-05 02:26:46,786 - orchestrator_langgraph - INFO - ✅ User posts agent initialized
+2025-07-05 02:26:46,807 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json
+2025-07-05 02:26:46,807 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-05 02:26:47,819 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json
+2025-07-05 02:26:47,834 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-05 02:26:49,854 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json
+2025-07-05 02:26:49,855 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-05 02:26:53,890 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json
+2025-07-05 02:26:53,890 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-07-05 02:27:01,910 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json
+2025-07-05 02:27:01,910 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-07-05 02:27:09,936 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json
+2025-07-05 02:27:09,989 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json
+2025-07-05 02:27:09,990 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-05 02:27:11,016 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json
+2025-07-05 02:27:11,016 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-05 02:27:13,039 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json
+2025-07-05 02:27:13,039 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-05 02:27:17,061 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json
+2025-07-05 02:27:17,061 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-07-05 02:27:25,074 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json
+2025-07-05 02:27:25,074 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-07-05 02:27:33,095 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json
+2025-07-05 02:27:33,156 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/README.md
+2025-07-05 02:27:33,156 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-05 02:27:34,178 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/README.md
+2025-07-05 02:27:34,178 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-05 02:27:36,311 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/README.md
+2025-07-05 02:27:36,327 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-05 02:27:37,470 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:27:37,712 - orchestrator_langgraph - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:27:37,734 - orchestrator_langgraph - INFO - 🤖 LangGraph Knowledge Orchestrator initialized successfully
+2025-07-05 02:27:38,129 - __main__ - INFO - Training and evaluating hybrid model...
+2025-07-05 02:27:49,219 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What are the key financial metrics for LGEN.L?'
+2025-07-05 02:27:49,221 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['fundamentals', 'news', 'userposts']
+2025-07-05 02:27:49,227 - agent_fundamentals - WARNING - No fundamentals records found for ticker: LGEN
+2025-07-05 02:27:49,227 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:49,233 - agent_news - WARNING - No records found for ticker: LGEN
+2025-07-05 02:27:49,233 - orchestrator_langgraph - INFO - 📰 News: 0 results
+2025-07-05 02:27:49,240 - agent_userposts - WARNING - No posts found for ticker: LGEN
+2025-07-05 02:27:49,241 - orchestrator_langgraph - INFO - 💬 User posts: 0 results
+2025-07-05 02:27:49,241 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:49,243 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What is market sentiment about LGEN.L?'
+2025-07-05 02:27:49,244 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['userposts', 'fundamentals', 'news']
+2025-07-05 02:27:49,250 - agent_userposts - WARNING - No posts found for ticker: LGEN
+2025-07-05 02:27:49,251 - orchestrator_langgraph - INFO - 💬 User posts: 0 results
+2025-07-05 02:27:49,254 - agent_fundamentals - WARNING - No fundamentals records found for ticker: LGEN
+2025-07-05 02:27:49,254 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:49,259 - agent_news - WARNING - No records found for ticker: LGEN
+2025-07-05 02:27:49,259 - orchestrator_langgraph - INFO - 📰 News: 0 results
+2025-07-05 02:27:49,260 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:49,263 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What recent news about LGEN.L?'
+2025-07-05 02:27:49,264 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['news', 'fundamentals', 'userposts']
+2025-07-05 02:27:49,270 - agent_news - WARNING - No records found for ticker: LGEN
+2025-07-05 02:27:49,270 - orchestrator_langgraph - INFO - 📰 News: 0 results
+2025-07-05 02:27:49,275 - agent_fundamentals - WARNING - No fundamentals records found for ticker: LGEN
+2025-07-05 02:27:49,275 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:49,281 - agent_userposts - WARNING - No posts found for ticker: LGEN
+2025-07-05 02:27:49,282 - orchestrator_langgraph - INFO - 💬 User posts: 0 results
+2025-07-05 02:27:49,283 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:55,525 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-05 02:27:55,541 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What are the key financial metrics for BLND.L?'
+2025-07-05 02:27:55,543 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['fundamentals', 'news', 'userposts']
+2025-07-05 02:27:55,547 - agent_fundamentals - WARNING - No fundamentals records found for ticker: BLND
+2025-07-05 02:27:55,548 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:55,549 - agent_news - WARNING - No records found for ticker: BLND
+2025-07-05 02:27:55,549 - orchestrator_langgraph - INFO - 📰 News: 0 results
+2025-07-05 02:27:55,549 - agent_userposts - INFO - Retrieved 10 posts for ticker BLND
+2025-07-05 02:27:55,561 - orchestrator_langgraph - INFO - 💬 User posts: 10 results
+2025-07-05 02:27:55,561 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:55,562 - orchestrator_langgraph - INFO - 🎯 Ranking 10 results
+2025-07-05 02:27:55,562 - orchestrator_langgraph - INFO - 🔗 Synthesizing comprehensive response
+2025-07-05 02:27:55,571 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What is market sentiment about BLND.L?'
+2025-07-05 02:27:55,572 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['userposts', 'fundamentals', 'news']
+2025-07-05 02:27:55,578 - agent_userposts - INFO - Retrieved 10 posts for ticker BLND
+2025-07-05 02:27:55,579 - orchestrator_langgraph - INFO - 💬 User posts: 10 results
+2025-07-05 02:27:55,583 - agent_fundamentals - WARNING - No fundamentals records found for ticker: BLND
+2025-07-05 02:27:55,583 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:55,585 - agent_news - WARNING - No records found for ticker: BLND
+2025-07-05 02:27:55,585 - orchestrator_langgraph - INFO - 📰 News: 0 results
+2025-07-05 02:27:55,585 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:55,585 - orchestrator_langgraph - INFO - 🎯 Ranking 10 results
+2025-07-05 02:27:55,585 - orchestrator_langgraph - INFO - 🔗 Synthesizing comprehensive response
+2025-07-05 02:27:55,599 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What recent news about BLND.L?'
+2025-07-05 02:27:55,600 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['news', 'fundamentals', 'userposts']
+2025-07-05 02:27:55,605 - agent_news - WARNING - No records found for ticker: BLND
+2025-07-05 02:27:55,605 - orchestrator_langgraph - INFO - 📰 News: 0 results
+2025-07-05 02:27:55,608 - agent_fundamentals - WARNING - No fundamentals records found for ticker: BLND
+2025-07-05 02:27:55,608 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:55,615 - agent_userposts - INFO - Retrieved 10 posts for ticker BLND
+2025-07-05 02:27:55,617 - orchestrator_langgraph - INFO - 💬 User posts: 10 results
+2025-07-05 02:27:55,617 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:55,618 - orchestrator_langgraph - INFO - 🎯 Ranking 10 results
+2025-07-05 02:27:55,618 - orchestrator_langgraph - INFO - 🔗 Synthesizing comprehensive response
+2025-07-05 02:27:57,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-05 02:27:57,632 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What are the key financial metrics for DGE.L?'
+2025-07-05 02:27:57,633 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['fundamentals', 'news', 'userposts']
+2025-07-05 02:27:57,636 - agent_fundamentals - WARNING - No fundamentals records found for ticker: DGE
+2025-07-05 02:27:57,636 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:57,642 - agent_news - INFO - Retrieved 15 records for ticker: DGE
+2025-07-05 02:27:57,642 - orchestrator_langgraph - INFO - 📰 News: 15 results
+2025-07-05 02:27:57,647 - agent_userposts - WARNING - No posts found for ticker: DGE
+2025-07-05 02:27:57,648 - orchestrator_langgraph - INFO - 💬 User posts: 0 results
+2025-07-05 02:27:57,648 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:57,649 - orchestrator_langgraph - INFO - 🎯 Ranking 15 results
+2025-07-05 02:27:57,649 - orchestrator_langgraph - INFO - 🔗 Synthesizing comprehensive response
+2025-07-05 02:27:57,651 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What is market sentiment about DGE.L?'
+2025-07-05 02:27:57,651 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['userposts', 'fundamentals', 'news']
+2025-07-05 02:27:57,656 - agent_userposts - WARNING - No posts found for ticker: DGE
+2025-07-05 02:27:57,657 - orchestrator_langgraph - INFO - 💬 User posts: 0 results
+2025-07-05 02:27:57,660 - agent_fundamentals - WARNING - No fundamentals records found for ticker: DGE
+2025-07-05 02:27:57,660 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:57,665 - agent_news - INFO - Retrieved 15 records for ticker: DGE
+2025-07-05 02:27:57,666 - orchestrator_langgraph - INFO - 📰 News: 15 results
+2025-07-05 02:27:57,666 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:57,667 - orchestrator_langgraph - INFO - 🎯 Ranking 15 results
+2025-07-05 02:27:57,667 - orchestrator_langgraph - INFO - 🔗 Synthesizing comprehensive response
+2025-07-05 02:27:57,669 - orchestrator_langgraph - INFO - 🔍 Analyzing intent for: 'What recent news about DGE.L?'
+2025-07-05 02:27:57,670 - orchestrator_langgraph - INFO - 🚀 Executing queries on agents: ['news', 'fundamentals', 'userposts']
+2025-07-05 02:27:57,675 - agent_news - INFO - Retrieved 15 records for ticker: DGE
+2025-07-05 02:27:57,675 - orchestrator_langgraph - INFO - 📰 News: 15 results
+2025-07-05 02:27:57,679 - agent_fundamentals - WARNING - No fundamentals records found for ticker: DGE
+2025-07-05 02:27:57,679 - orchestrator_langgraph - INFO - 📊 Fundamentals: 0 results
+2025-07-05 02:27:57,683 - agent_userposts - WARNING - No posts found for ticker: DGE
+2025-07-05 02:27:57,684 - orchestrator_langgraph - INFO - 💬 User posts: 0 results
+2025-07-05 02:27:57,684 - orchestrator_langgraph - INFO - 📊 Standardizing results from agents
+2025-07-05 02:27:57,685 - orchestrator_langgraph - INFO - 🎯 Ranking 15 results
+2025-07-05 02:27:57,685 - orchestrator_langgraph - INFO - 🔗 Synthesizing comprehensive response
+2025-07-05 02:27:59,912 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-05 02:27:59,923 - __main__ - INFO - ✅ Hybrid model training completed
+2025-07-05 02:27:59,923 - __main__ - INFO - Initializing ML Pipeline...
+2025-07-05 02:27:59,923 - __main__ - INFO - Running ML pipeline...
+2025-07-05 02:28:01,381 - __main__ - INFO - ✅ ML pipeline completed
+2025-07-05 02:28:01,381 - __main__ - INFO - ML scoring completed: 2/2 models successful
+2025-07-05 02:28:01,381 - __main__ - INFO - 🤖 PHASE 4: AGENT DEMONSTRATIONS
+2025-07-05 02:28:01,381 - __main__ - INFO - ==================================================
+2025-07-05 02:28:01,381 - __main__ - INFO - Running fundamentals agent demo...
+2025-07-05 02:28:01,400 - agent_fundamentals - INFO - Connected to table 'fundamentals_embeddings' with 329 records
+2025-07-05 02:28:01,400 - agent_fundamentals - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:28:01,403 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:28:01,403 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:28:03,023 - agent_fundamentals - WARNING - No fundamentals records found for ticker: LLOY.L
+2025-07-05 02:28:03,071 - agent_fundamentals - INFO - Retrieved 5 fundamentals records for semantic query: 'profitable companies with strong returns and low debt'
+2025-07-05 02:28:03,086 - agent_fundamentals - INFO - Analyzed 10 companies with criteria: roe > 0.10
+2025-07-05 02:28:03,122 - agent_fundamentals - INFO - Found 6 similar companies to JDW.L
+2025-07-05 02:28:03,132 - agent_fundamentals - INFO - Retrieved 8 fundamentals records for date range: 2024-01-01 to 2024-12-31
+2025-07-05 02:28:03,133 - agent_fundamentals - WARNING - No companies found matching criteria: pe_ratio > 0 AND pe_ratio < 15 AND roe > 0.05
+2025-07-05 02:28:03,133 - agent_fundamentals - INFO - Analyzed 5 companies with criteria: roe > 0.15 AND revenue > 1000000000
+2025-07-05 02:28:03,149 - __main__ - INFO -   ✅ fundamentals agent demo completed
+2025-07-05 02:28:03,149 - __main__ - INFO - Running userposts agent demo...
+2025-07-05 02:28:03,151 - __main__ - ERROR -   ❌ userposts agent demo failed: module 'demo_userposts_agent' has no attribute 'main'
+2025-07-05 02:28:03,151 - __main__ - INFO - Agent demos completed: 1/2 successful
+2025-07-05 02:28:03,152 - __main__ - INFO - 📋 GENERATING FINAL REPORT
+2025-07-05 02:28:03,152 - __main__ - INFO - ==================================================
+2025-07-05 02:28:03,153 - __main__ - INFO - 📋 Report saved to: ../complete_rag_report_20250705_022803.md
+2025-07-05 02:28:03,154 - __main__ - INFO - ============================================================
+2025-07-05 02:28:03,154 - __main__ - INFO - 🎉 COMPLETE RAG SYSTEM FINISHED
+2025-07-05 02:28:03,154 - __main__ - INFO - Total Duration: 144.7 seconds
+2025-07-05 02:28:03,155 - __main__ - INFO - ============================================================
+2025-07-05 02:28:03,155 - __main__ - INFO - 🎉 COMPLETE RAG SYSTEM FINISHED SUCCESSFULLY!

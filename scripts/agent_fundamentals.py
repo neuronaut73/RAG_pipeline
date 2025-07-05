@@ -24,7 +24,7 @@ class FundamentalsAgent:
     
     def __init__(
         self,
-        lancedb_dir: str = "lancedb_store",
+        lancedb_dir: str = "../lancedb_store",
         table_name: str = "fundamentals_embeddings",
         embedding_model: str = "all-MiniLM-L6-v2",
         default_limit: int = 10

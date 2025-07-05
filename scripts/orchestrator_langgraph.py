@@ -105,7 +105,7 @@ class LangGraphOrchestrator:
     
     def __init__(
         self,
-        lancedb_dir: str = "lancedb_store",
+        lancedb_dir: str = "../lancedb_store",
         default_limit: int = 10,
         enable_cross_encoding: bool = True,
         cross_encoder_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"

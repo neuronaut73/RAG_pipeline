@@ -1,0 +1,216 @@
+2025-07-05 02:04:21,237 - __main__ - INFO - 🚀 STARTING COMPLETE RAG SYSTEM
+2025-07-05 02:04:21,237 - __main__ - INFO - ============================================================
+2025-07-05 02:04:21,237 - __main__ - INFO - Start Time: 2025-07-05 02:04:21
+2025-07-05 02:04:21,238 - __main__ - INFO - ============================================================
+2025-07-05 02:04:21,238 - __main__ - INFO - 🔧 PHASE 1: DATA PREPARATION
+2025-07-05 02:04:21,238 - __main__ - INFO - ==================================================
+2025-07-05 02:04:21,575 - numexpr.utils - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2025-07-05 02:04:21,589 - numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+2025-07-05 02:04:22,059 - __main__ - WARNING - ❌ Missing embeddings: ['fundamentals_embeddings', 'userposts_embeddings']
+2025-07-05 02:04:28,781 - __main__ - ERROR - ❌ Embedding pipeline error: DuckDB file not found at data\sentiment_system.duckdb
+2025-07-05 02:04:28,781 - __main__ - INFO - 🎭 PHASE 2: RAG ORCHESTRATION
+2025-07-05 02:04:28,781 - __main__ - INFO - ==================================================
+2025-07-05 02:04:28,802 - __main__ - INFO - Running comprehensive demo orchestrator...
+2025-07-05 02:04:28,802 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:04:28,813 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:28,813 - orchestrator_agent - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:28,813 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:28,816 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:28,817 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:31,994 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:04:31,994 - orchestrator_agent - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:04:31,994 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:31,994 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:31,994 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:33,727 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:33,728 - orchestrator_agent - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:34,832 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:04:35,073 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:04:35,073 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:04:35,073 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:04:35,073 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:35,073 - orchestrator_agent - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:35,073 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:35,073 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:35,073 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:36,674 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:04:36,674 - orchestrator_agent - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:04:36,674 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:36,674 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:36,674 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:38,275 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:38,275 - orchestrator_agent - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:39,383 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 🔍 Processing query: 'profitable companies with strong ROE and returns'
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📋 Query plan: financial_analysis, agents: []
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 🔍 Processing query: 'AML comprehensive analysis sentiment and performance'
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📋 Query plan: company_analysis, agents: []
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 🔍 Processing query: 'BGO comprehensive analysis sentiment and performance'
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📋 Query plan: company_analysis, agents: []
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:39,632 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:39,645 - orchestrator_agent - INFO - 🔍 Processing query: 'HWDN comprehensive analysis sentiment and performance'
+2025-07-05 02:04:39,645 - orchestrator_agent - INFO - 📋 Query plan: company_analysis, agents: []
+2025-07-05 02:04:39,645 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:39,645 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:39,645 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:39,646 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:04:39,648 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:39,648 - orchestrator_agent - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:39,648 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:39,649 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:39,649 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:41,238 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:04:41,239 - orchestrator_agent - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:04:41,239 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:41,242 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:41,242 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:43,442 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:43,442 - orchestrator_agent - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:44,589 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 🔍 Processing query: 'BGO social sentiment analysis recent posts'
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 🔍 Processing query: 'AML social sentiment analysis recent posts'
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 🔍 Processing query: 'HWDN social sentiment analysis recent posts'
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:44,837 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:04:44,837 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:44,837 - orchestrator_agent - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:44,837 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:44,848 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:44,849 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:46,396 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:04:46,396 - orchestrator_agent - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:04:46,396 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:46,396 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:46,396 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:47,989 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:47,989 - orchestrator_agent - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:49,330 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:04:49,580 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:04:49,580 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:04:49,580 - orchestrator_agent - INFO - 🔍 Processing query: 'recent earnings announcements financial results news'
+2025-07-05 02:04:49,580 - orchestrator_agent - INFO - 📋 Query plan: financial_analysis, agents: []
+2025-07-05 02:04:49,580 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:49,595 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:49,595 - orchestrator_agent - INFO - ✅ Query completed in 0.02s, 0 total results
+2025-07-05 02:04:49,595 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:04:49,595 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:49,595 - orchestrator_agent - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:49,595 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:49,601 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:49,601 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:51,126 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:04:51,126 - orchestrator_agent - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:04:51,126 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:51,126 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:51,126 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:52,672 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:52,672 - orchestrator_agent - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:53,761 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:04:54,006 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:04:54,006 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:04:54,019 - orchestrator_agent - INFO - 🔍 Processing query: 'compare AML vs BGO financial performance sentiment and news coverage'
+2025-07-05 02:04:54,019 - orchestrator_agent - INFO - 📋 Query plan: financial_analysis, agents: []
+2025-07-05 02:04:54,019 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:54,019 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:54,019 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:54,020 - orchestrator_agent - INFO - Initializing domain agents...
+2025-07-05 02:04:54,022 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:54,022 - orchestrator_agent - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:04:54,023 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:54,026 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:54,026 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:55,543 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:04:55,559 - orchestrator_agent - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:04:55,559 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:04:55,559 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:04:55,559 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:04:57,105 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:57,105 - orchestrator_agent - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:04:58,284 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 🤖 Knowledge Orchestrator initialized successfully
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 🔍 Processing query: 'bullish investment opportunities strong growth potential'
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 🔍 Processing query: 'bullish investment opportunities strong growth potential'
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 🔍 Processing query: 'recent sentiment analysis'
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 🔍 Processing query: 'recent sentiment analysis'
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Query plan: user_sentiment, agents: []
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📋 Standardized 0 results from 0 agents
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - 📊 Applied simple relevance ranking
+2025-07-05 02:04:58,544 - orchestrator_agent - INFO - ✅ Query completed in 0.00s, 0 total results
+2025-07-05 02:04:58,544 - __main__ - INFO - ✅ Demo orchestration completed
+2025-07-05 02:04:58,544 - __main__ - INFO - 🧠 PHASE 3: ML MODEL SCORING
+2025-07-05 02:04:58,544 - __main__ - INFO - ==================================================
+2025-07-05 02:05:01,155 - __main__ - INFO - Initializing Hybrid Ensemble Model...
+2025-07-05 02:05:01,155 - orchestrator_langgraph - INFO - Initializing domain agents...
+2025-07-05 02:05:01,155 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:05:01,155 - orchestrator_langgraph - WARNING - ⚠️  Fundamentals agent initialization failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:05:01,155 - agent_news - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:05:01,171 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:05:01,171 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:05:02,787 - agent_news - ERROR - Failed to connect to LanceDB: Table 'news_embeddings' was not found
+2025-07-05 02:05:02,787 - orchestrator_langgraph - WARNING - ⚠️  News agent initialization failed: Table 'news_embeddings' was not found
+2025-07-05 02:05:02,787 - agent_userposts - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-07-05 02:05:02,787 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-05 02:05:02,787 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-05 02:05:04,371 - agent_userposts - ERROR - Failed to connect to database: Table 'userposts_embeddings' was not found
+2025-07-05 02:05:04,371 - orchestrator_langgraph - WARNING - ⚠️  User posts agent initialization failed: Table 'userposts_embeddings' was not found
+2025-07-05 02:05:05,503 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cpu
+2025-07-05 02:05:05,956 - orchestrator_langgraph - INFO - ✅ Cross-encoder initialized: cross-encoder/ms-marco-MiniLM-L-6-v2
+2025-07-05 02:05:05,956 - orchestrator_langgraph - INFO - 🤖 LangGraph Knowledge Orchestrator initialized successfully
+2025-07-05 02:05:06,522 - __main__ - INFO - Training and evaluating hybrid model...
+2025-07-05 02:05:06,522 - __main__ - ERROR - ❌ Hybrid model failed: [Errno 2] No such file or directory: 'data\\labels.csv'
+2025-07-05 02:05:06,522 - __main__ - INFO - Initializing ML Pipeline...
+2025-07-05 02:05:06,522 - __main__ - INFO - Running ML pipeline...
+2025-07-05 02:05:06,522 - __main__ - ERROR - ❌ ML pipeline failed: [Errno 2] No such file or directory: 'data\\labels.csv'
+2025-07-05 02:05:06,522 - __main__ - INFO - ML scoring completed: 0/2 models successful
+2025-07-05 02:05:06,522 - __main__ - INFO - 🤖 PHASE 4: AGENT DEMONSTRATIONS
+2025-07-05 02:05:06,522 - __main__ - INFO - ==================================================
+2025-07-05 02:05:06,522 - __main__ - INFO - Running fundamentals agent demo...
+2025-07-05 02:05:06,536 - agent_fundamentals - ERROR - Failed to open table 'fundamentals_embeddings': Table 'fundamentals_embeddings' was not found
+2025-07-05 02:05:06,536 - __main__ - ERROR -   ❌ fundamentals agent demo failed: Table 'fundamentals_embeddings' was not found
+2025-07-05 02:05:06,536 - __main__ - INFO - Running userposts agent demo...
+2025-07-05 02:05:06,541 - __main__ - ERROR -   ❌ userposts agent demo failed: module 'demo_userposts_agent' has no attribute 'main'
+2025-07-05 02:05:06,541 - __main__ - INFO - Agent demos completed: 0/2 successful
+2025-07-05 02:05:06,541 - __main__ - INFO - 📋 GENERATING FINAL REPORT
+2025-07-05 02:05:06,541 - __main__ - INFO - ==================================================
+2025-07-05 02:05:06,542 - __main__ - INFO - 📋 Report saved to: complete_rag_report_20250705_020506.md
+2025-07-05 02:05:06,542 - __main__ - INFO - ============================================================
+2025-07-05 02:05:06,542 - __main__ - INFO - 🎉 COMPLETE RAG SYSTEM FINISHED
+2025-07-05 02:05:06,542 - __main__ - INFO - Total Duration: 45.3 seconds
+2025-07-05 02:05:06,542 - __main__ - INFO - ============================================================
+2025-07-05 02:05:06,543 - __main__ - INFO - 🎉 COMPLETE RAG SYSTEM FINISHED SUCCESSFULLY!
