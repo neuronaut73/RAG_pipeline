@@ -105,7 +105,7 @@ def chunk_post_content(content: str, max_chunk_size: int = 300, overlap: int = 5
 class UserPostsEmbedderDuckDB:
     """DuckDB-based User Posts Domain Embedding Pipeline"""
     
-    def __init__(self, db_path="../data/sentiment_system.duckdb", lancedb_dir="../lancedb_store", 
+    def __init__(self, db_path="data/sentiment_system.duckdb", lancedb_dir="lancedb_store", 
                  embedding_model="all-MiniLM-L6-v2"):
         self.db_path = Path(db_path)
         self.lancedb_dir = Path(lancedb_dir)
